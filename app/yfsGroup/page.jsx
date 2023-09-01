@@ -1,10 +1,8 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Button,
-  Card,
-  CardContent,
   CardMedia,
   Fade,
   Grid,
@@ -30,14 +28,24 @@ const style = {
   p: 4,
 };
 export default function YFSGroup() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const [boxOpacity, setBoxOpacity] = useState(0.5);
+  const [fontColor, setFontColor] = useState("#3B4A41");
+  const handleMouseEnter = () => {
+    setBoxOpacity(0);
+    setFontColor("white");
+  };
+  const handleMouseLeave = () => {
+    setBoxOpacity(0.5);
+    setFontColor("#3B4A41");
+  };
   return (
     <Box>
       <Box
         position="absolute"
-        backgroundColor="whitesmoke"
+        backgroundColor="#3B4A41"
         width="100%"
         padding="20px 50px"
         display="flex"
@@ -61,7 +69,7 @@ export default function YFSGroup() {
             />
             <Typography
               sx={{
-                color: "#c9a868",
+                color: "white",
                 fontWeight: "bold",
                 transition: "all 0.5s ease",
                 "&:hover": {
@@ -75,14 +83,15 @@ export default function YFSGroup() {
         <Button
           onClick={handleOpen}
           sx={{
-            color: "#c9a868",
+            color: "white",
             fontWeight: "bold",
-            border: "2px solid #c9a868",
+            border: "2px solid white",
             borderRadius: "5px",
             padding: "5px 10px",
             transition: "all 0.5s ease",
             "&:hover": {
               backgroundColor: "#c9a868",
+              borderColor: "#c9a868",
               color: "white",
             },
           }}>
@@ -101,7 +110,17 @@ export default function YFSGroup() {
       />
       <Box
         position="absolute"
-        bottom="60px"
+        top="10vh"
+        sx={{
+          height: "90vh",
+          width: "100%",
+          backgroundColor: `rgba(255, 255, 255, ${boxOpacity})`,
+          transition: "background-color 1s",
+        }}
+      />
+      <Box
+        position="absolute"
+        top="120px"
         color="white"
         fontWeight="bold"
         padding="0 50px">
@@ -110,60 +129,101 @@ export default function YFSGroup() {
           justifyContent="flex-start"
           alignItems="center"
           alignContent="center">
-          <Grid item xs={1.2}>
+          <Grid item xs={1}>
             <CardMedia
               sx={{
-                height: "120px",
-                width: "120px",
+                height: "100px",
+                width: "100px",
               }}
               component="img"
               image="/YFSLogo.png"
               alt="YFS Group Sdn Bhd Logo"
             />{" "}
           </Grid>
-          <Grid item xs={5}>
-            <Typography variant="h2" fontWeight="bold" gutterBottom>
+          <Grid item xs={7}>
+            <Typography
+              variant="h3"
+              fontWeight="bold"
+              sx={{
+                color: fontColor,
+                transition: "font-color 1s",
+              }}>
               Yun Fung Sang Group Sdn Bhd
+            </Typography>
+            <Typography
+              variant="h6"
+              fontWeight="bold"
+              sx={{
+                color: fontColor,
+                transition: "font-color 1s",
+              }}
+              gutterBottom>
+              WHOSALE OF FERTILIZER OF AGROCHEMICAL PRODUCT
             </Typography>
           </Grid>
         </Grid>
-        <Typography variant="h6" gutterBottom width="50%">
-          WHOSALE OF FERTILIZER OF AGROCHEMICAL PRODUCT
-        </Typography>
         <Grid
           container
+          direction="row"
           justifyContent="flex-start"
           alignContent="center"
           spacing={1}
           sx={{ marginTop: { sx: "15px", md: "30px" } }}>
-          <Grid item xs={12} md={4}>
-            <Typography variant="h5" fontWeight="bold" gutterBottom>
+          <Grid item xs={7}>
+            <Typography
+              variant="h5"
+              fontWeight="bold"
+              sx={{
+                color: fontColor,
+                transition: "font-color 1s",
+              }}
+              gutterBottom>
               Vision:
             </Typography>
-            <Typography variant="h6" gutterBottom sx={{paddingRight:{md:"50px"}}}>
+            <Typography variant="h6" gutterBottom sx={{
+                color: fontColor,
+                transition: "font-color 1s",
+              }}>
               To be a premier company with focus on positive contribution to
               economic development and agricultural growth of the country.{" "}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
-            <Typography variant="h5" fontWeight="bold" gutterBottom>
+          <Grid item xs={6}>
+            <Typography
+              variant="h5"
+              fontWeight="bold"
+              sx={{
+                color: fontColor,
+                transition: "font-color 1s",
+              }}
+              gutterBottom>
               Mision:
             </Typography>
-            <Typography variant="h6" gutterBottom sx={{paddingRight:{md:"50px"}}}>
+            <Typography variant="h6" gutterBottom sx={{
+                color: fontColor,
+                transition: "font-color 1s",
+              }}>
               Supporting the development of agriculture through the wholesale of
               fertilizer and agrochemical products to support agricultural
               activities for crop production on a fee or contract basis.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={4} align="center">
-            <Typography variant="h5" fontWeight="bold" gutterBottom>
+          <Grid item xs={7}>
+            <Typography
+              variant="h6"
+              fontWeight="bold"
+              sx={{
+                color: fontColor,
+                transition: "font-color 1s",
+              }}
+              gutterBottom>
               More Info
             </Typography>
             <Box
               sx={{
                 borderRadius: "5px",
                 display: "flex",
-                justifyContent: "center",
+                justifyContent: "flex-start",
                 alignItems: "center",
               }}>
               <Box
@@ -180,12 +240,15 @@ export default function YFSGroup() {
                       height: "100px",
                       width: "80px",
                       borderRadius: "5px",
-                      transition: "width 1s, height 1s",
-                      "&:hover": {
-                        height: "110px",
-                        width: "90px",
-                      },
+                      // transition: "width 1s, height 1s",
+                      // "&:hover": {
+                      //   height: "110px",
+                      //   width: "90px",
+                      // },
                     }}
+
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                     component="img"
                     image="/PDFDL.jpeg"
                     alt="Download Our Company PDF"
@@ -212,7 +275,9 @@ export default function YFSGroup() {
                         color: "red",
                       },
                     }}
-                    gutterBottom>
+                    gutterBottom
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}>
                     Download our company profile
                   </Typography>
                 </Link>
@@ -267,7 +332,7 @@ export default function YFSGroup() {
               }}
               size="lg"
               component="a"
-              href="https://wa.me/60138160355?text=Hi,%20I%20want%20to%20know%20more%20about%20Kesatria%20Holding%20Sdn%20Bhd!"
+              href="https://wa.me/60138160355?text=Hi,%20I%20want%20to%20know%20more%20about%20YFS%20Group!"
               endIcon={<WhatsAppIcon />}>
               CONTACT US
             </Button>

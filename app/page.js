@@ -63,11 +63,11 @@ export default function Home() {
             />
             <Typography
               sx={{
-                color: "#c9a868",
+                // #c9a868
+                color: "white",
                 fontWeight: "bold",
                 transition: "all 0.5s ease",
                 "&:hover": {
-                  color: "white",
                   fontSize: "1.1rem",
                 },
                 textShadow:
@@ -111,16 +111,14 @@ export default function Home() {
         fontWeight="bold"
         padding="0 50px">
         <Typography variant="h2" gutterBottom>
-          Lorem Ipsum Dolor Sit Amet
+          Kesatria Holding
         </Typography>
         <Typography variant="h6" sx={{ width: { sx: "100%", md: "70%" } }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
-          volutpat ac tincidunt vitae semper quis lectus nulla. <br /> Velit
-          egestas dui id ornare arcu odio ut sem nulla. Orci phasellus egestas
-          tellus rutrum tellus pellentesque eu. Ultrices gravida dictum fusce
-          ut. Volutpat consequat mauris nunc congue nisi vitae suscipit tellus.
-          At consectetur lorem donec massa sapien faucibus et molestie ac.
+          Kesatria Holding Sdn Bhd is a private limited company that has several
+          subsidiaries operating for over 20 years based in Sabah, Malaysia.
+          Where, the business activities carried out are concentrated in the
+          Palm Oil Industry with the total turnover of the company exceeding 50
+          Million Malaysian Ringgit (MYR) in a year.
         </Typography>
       </Box>
       <Box
@@ -132,9 +130,12 @@ export default function Home() {
           Meet Our Subsidiaries
         </Typography>
         <Typography variant="h6" sx={{ width: { sx: "100%", md: "90%" } }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
-          volutpat ac tincidunt vitae semper quis lectus nulla.
+          Kesatria Holding together with its subsidiaries will hold several more
+          collaborations with higher education centers for agricultural research
+          projects also government in empowering the agricultural sector,
+          especially the palm oil sector, to achieve the Sabah Government's
+          policy goals with initiative to make the state a global leader in the
+          sustainable palm oil industry.
         </Typography>
         <Grid
           marginTop="10px"
@@ -285,9 +286,9 @@ export default function Home() {
           Our Partnership Companies
         </Typography>
         <Typography variant="h6" sx={{ width: { sx: "100%", md: "90%" } }}>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
-          volutpat ac tincidunt vitae semper quis lectus nulla.
+          Kesatria Holding is always open for any opportunity of comprehensive
+          collaboration to achieve a win-win situation of environmental and
+          economic value. Below is our valuable partnership companies:
         </Typography>
         <Grid
           marginTop="10px"
@@ -320,14 +321,14 @@ export default function Home() {
               <Link href="/vhl">
                 <CardMedia
                   component="img"
-                  alt="Agri Business Consultancy Logo"
+                  alt="VHL Fertilizer Sdn Bhd"
                   height="200px"
                   sx={{ objectFit: "contain" }}
                   image="/ABCLogo.png"
                 />
                 <CardContent>
                   <Typography variant="h5" align="center">
-                    VHL
+                    VHL Fertilizer Sdn Bhd
                   </Typography>
                 </CardContent>
               </Link>
