@@ -105,46 +105,60 @@ export default function YFSGroup() {
         color="white"
         fontWeight="bold"
         padding="0 50px">
-        <Typography
-          variant="h2"
-          fontWeight="bold"
-          gutterBottom
-          sx={{ width: { sm: "90%", md: "40%" } }}>
-          Lorem Ipsum Dolor Sit Amet
-        </Typography>
+        <Grid
+          container
+          justifyContent="flex-start"
+          alignItems="center"
+          alignContent="center">
+          <Grid item xs={1.2}>
+            <CardMedia
+              sx={{
+                height: "120px",
+                width: "120px",
+              }}
+              component="img"
+              image="/yfsLogo.png"
+              alt="YFS Group Sdn Bhd Logo"
+            />{" "}
+          </Grid>
+          <Grid item xs={5}>
+            <Typography variant="h2" fontWeight="bold" gutterBottom>
+              Yun Fung Sang Group Sdn Bhd
+            </Typography>
+          </Grid>
+        </Grid>
         <Typography variant="h6" gutterBottom width="50%">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque
-          volutpat ac tincidunt vitae semper quis lectus nulla. Velit egestas
-          dui id ornare arcu odio ut sem nulla. Orci phasellus egestas tellus
-          rutrum tellus pellentesque eu. Ultrices gravida dictum fusce ut.
+          WHOSALE OF FERTILIZER OF AGROCHEMICAL PRODUCT
         </Typography>
         <Grid
           container
           justifyContent="flex-start"
           alignContent="center"
-          alignItems="center"
           spacing={1}
           sx={{ marginTop: { sx: "15px", md: "30px" } }}>
           <Grid item xs={12} md={4}>
             <Typography variant="h5" fontWeight="bold" gutterBottom>
               Vision:
             </Typography>
-            <Typography variant="h6" gutterBottom>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <Typography variant="h6" gutterBottom sx={{paddingRight:{md:"50px"}}}>
+              To be a premier company with focus on positive contribution to
+              economic development and agricultural growth of the country.{" "}
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
             <Typography variant="h5" fontWeight="bold" gutterBottom>
               Mision:
             </Typography>
-            <Typography variant="h6" gutterBottom>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            <Typography variant="h6" gutterBottom sx={{paddingRight:{md:"50px"}}}>
+              Supporting the development of agriculture through the wholesale of
+              fertilizer and agrochemical products to support agricultural
+              activities for crop production on a fee or contract basis.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={4} >
+          <Grid item xs={12} md={4} align="center">
+            <Typography variant="h5" fontWeight="bold" gutterBottom>
+              More Info
+            </Typography>
             <Box
               sx={{
                 borderRadius: "5px",
@@ -155,7 +169,7 @@ export default function YFSGroup() {
               <Box
                 sx={{
                   background: "white",
-                  height:"140px",
+                  height: "140px",
                   padding: "20px 10px 20px 20px",
                   borderTopLeftRadius: "5px",
                   borderBottomLeftRadius: "5px",
@@ -182,7 +196,7 @@ export default function YFSGroup() {
                 sx={{
                   background: "white",
                   padding: "20px 30px 20px 10px",
-                  height:"140px",
+                  height: "140px",
                   borderTopRightRadius: "5px",
                   borderBottomRightRadius: "5px",
                 }}>
@@ -225,7 +239,8 @@ export default function YFSGroup() {
               Address
             </Typography>
             <Typography id="transition-modal-description" gutterBottom>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+              LOT 70 & 71, SIBUGA INDUSTRIAL CENTRE, JALAN LINTAS SIBUGA, 90000
+              SANDAKAN, SABAH
             </Typography>
             <Box height="80%">
               <iframe
@@ -235,7 +250,7 @@ export default function YFSGroup() {
                 marginHeight="0"
                 marginWidth="0"
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Utara,%20Bandar%20Utama%20Sandakan+(Bataras%20Hypermarket%20Sandakan)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                src=" https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Lintas%20Sibuga,%20Sibuga%20Industrial%20Centre,%20Lot%2070%20Sandakan+(Yun%20Fung%20Sang%20Group%20Sdn%20Bhd)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </Box>
             <Button
               variant="solid"
@@ -252,7 +267,7 @@ export default function YFSGroup() {
               }}
               size="lg"
               component="a"
-              href="https://wa.me/60138180355?text=Hi,%20I%20want%20to%20know%20more%20about%20Kesatria%20Holding%20Sdn%20Bhd!"
+              href="https://wa.me/60138160355?text=Hi,%20I%20want%20to%20know%20more%20about%20Kesatria%20Holding%20Sdn%20Bhd!"
               endIcon={<WhatsAppIcon />}>
               CONTACT US
             </Button>
@@ -272,7 +287,7 @@ export default function YFSGroup() {
               size="lg"
               component="a"
               onClick={() =>
-                (window.location = "mailto:kesatriaholding@gmail.com")
+                (window.location = "mailto:marketing@yunfungsang.com")
               }
               endIcon={<EmailIcon />}>
               Email Us
