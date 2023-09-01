@@ -31,20 +31,24 @@ export default function YFSGroup() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [boxOpacity, setBoxOpacity] = useState(0.5);
-  const [fontColor, setFontColor] = useState("#3B4A41");
+  const [boxOpacity, setBoxOpacity] = useState(0.8);
+  const [fontColor, setFontColor] = useState('#3B4A41');
+  const [fontOpacity, setFontOpacity] = useState(1);
   const handleMouseEnter = () => {
     setBoxOpacity(0);
     setFontColor("white");
+    setFontOpacity(0);
   };
   const handleMouseLeave = () => {
-    setBoxOpacity(0.5);
+    setBoxOpacity(0.8);
     setFontColor("#3B4A41");
+    setFontOpacity(1);
   };
   return (
     <Box>
       <Box
         position="absolute"
+        zIndex="1"
         backgroundColor="#3B4A41"
         width="100%"
         padding="20px 50px"
@@ -110,9 +114,9 @@ export default function YFSGroup() {
       />
       <Box
         position="absolute"
-        top="10vh"
         sx={{
-          height: "90vh",
+          top: "0",
+          height: "100vh",
           width: "100%",
           backgroundColor: `rgba(255, 255, 255, ${boxOpacity})`,
           transition: "background-color 1s",
@@ -146,7 +150,9 @@ export default function YFSGroup() {
               fontWeight="bold"
               sx={{
                 color: fontColor,
-                transition: "font-color 1s",
+                transition: "font-color 0.5s",
+                textShadow:
+                  "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
               }}>
               Yun Fung Sang Group Sdn Bhd
             </Typography>
@@ -154,8 +160,11 @@ export default function YFSGroup() {
               variant="h6"
               fontWeight="bold"
               sx={{
+                paddingLeft: "5px",
                 color: fontColor,
-                transition: "font-color 1s",
+                transition: "font-color 0.5s",
+                textShadow:
+                  "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
               }}
               gutterBottom>
               WHOSALE OF FERTILIZER OF AGROCHEMICAL PRODUCT
@@ -168,21 +177,29 @@ export default function YFSGroup() {
           justifyContent="flex-start"
           alignContent="center"
           spacing={1}
-          sx={{ marginTop: { sx: "15px", md: "30px" } }}>
+          sx={{
+            marginTop: { sx: "15px", md: "30px" },
+            paddingLeft: { xs: "15px" },
+          }}>
           <Grid item xs={7}>
             <Typography
               variant="h5"
               fontWeight="bold"
               sx={{
-                color: fontColor,
-                transition: "font-color 1s",
+                opacity: fontOpacity,
+                color:"#3B4A41",
+                transition: "opacity 1s",
               }}
               gutterBottom>
               Vision:
             </Typography>
-            <Typography variant="h6" gutterBottom sx={{
-                color: fontColor,
-                transition: "font-color 1s",
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{
+                opacity: fontOpacity,
+                color:"#3B4A41",
+                transition: "opacity 1s",
               }}>
               To be a premier company with focus on positive contribution to
               economic development and agricultural growth of the country.{" "}
@@ -193,15 +210,20 @@ export default function YFSGroup() {
               variant="h5"
               fontWeight="bold"
               sx={{
-                color: fontColor,
-                transition: "font-color 1s",
+                opacity: fontOpacity,
+                color:"#3B4A41",
+                transition: "opacity 1s",
               }}
               gutterBottom>
               Mision:
             </Typography>
-            <Typography variant="h6" gutterBottom sx={{
-                color: fontColor,
-                transition: "font-color 1s",
+            <Typography
+              variant="h6"
+              gutterBottom
+              sx={{
+                opacity: fontOpacity,
+                color:"#3B4A41",
+                transition: "opacity 1s",
               }}>
               Supporting the development of agriculture through the wholesale of
               fertilizer and agrochemical products to support agricultural
@@ -213,8 +235,9 @@ export default function YFSGroup() {
               variant="h6"
               fontWeight="bold"
               sx={{
-                color: fontColor,
-                transition: "font-color 1s",
+                opacity: fontOpacity,
+                color:"#3B4A41",
+                transition: "opacity 1s",
               }}
               gutterBottom>
               More Info
@@ -246,7 +269,6 @@ export default function YFSGroup() {
                       //   width: "90px",
                       // },
                     }}
-
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
                     component="img"
