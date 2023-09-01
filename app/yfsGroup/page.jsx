@@ -189,8 +189,7 @@ export default function YFSGroup() {
                 opacity: fontOpacity,
                 color:"#3B4A41",
                 transition: "opacity 1s",
-              }}
-              gutterBottom>
+              }}>
               Vision:
             </Typography>
             <Typography
@@ -205,16 +204,16 @@ export default function YFSGroup() {
               economic development and agricultural growth of the country.{" "}
             </Typography>
           </Grid>
-          <Grid item xs={6}>
+          <Grid item xs={5.5}>
             <Typography
               variant="h5"
               fontWeight="bold"
               sx={{
+                marginTop:"15px",
                 opacity: fontOpacity,
                 color:"#3B4A41",
                 transition: "opacity 1s",
-              }}
-              gutterBottom>
+              }}>
               Mision:
             </Typography>
             <Typography
@@ -235,6 +234,7 @@ export default function YFSGroup() {
               variant="h6"
               fontWeight="bold"
               sx={{
+                marginTop:"15px",
                 opacity: fontOpacity,
                 color:"#3B4A41",
                 transition: "opacity 1s",
