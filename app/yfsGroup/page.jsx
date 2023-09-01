@@ -9,6 +9,8 @@ import {
   Backdrop,
   Modal,
   Typography,
+  ImageList,
+  ImageListItem,
 } from "@mui/material";
 import Link from "next/link";
 import EmailIcon from "@mui/icons-material/Email";
@@ -32,17 +34,20 @@ export default function YFSGroup() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
   const [boxOpacity, setBoxOpacity] = useState(0.8);
-  const [fontColor, setFontColor] = useState('#3B4A41');
+  const [fontColor, setFontColor] = useState("#3B4A41");
   const [fontOpacity, setFontOpacity] = useState(1);
+  const [showImage, setShowImage] = useState("visible");
   const handleMouseEnter = () => {
     setBoxOpacity(0);
     setFontColor("white");
     setFontOpacity(0);
+    setShowImage("hidden");
   };
   const handleMouseLeave = () => {
     setBoxOpacity(0.8);
     setFontColor("#3B4A41");
     setFontOpacity(1);
+    setShowImage("visible");
   };
   return (
     <Box>
@@ -50,6 +55,7 @@ export default function YFSGroup() {
         position="absolute"
         zIndex="1"
         backgroundColor="#3B4A41"
+        sx={{ borderBottom: "1px solid black" }}
         width="100%"
         padding="20px 50px"
         display="flex"
@@ -187,7 +193,7 @@ export default function YFSGroup() {
               fontWeight="bold"
               sx={{
                 opacity: fontOpacity,
-                color:"#3B4A41",
+                color: "#3B4A41",
                 transition: "opacity 1s",
               }}>
               Vision:
@@ -197,7 +203,7 @@ export default function YFSGroup() {
               gutterBottom
               sx={{
                 opacity: fontOpacity,
-                color:"#3B4A41",
+                color: "#3B4A41",
                 transition: "opacity 1s",
               }}>
               To be a premier company with focus on positive contribution to
@@ -209,9 +215,9 @@ export default function YFSGroup() {
               variant="h5"
               fontWeight="bold"
               sx={{
-                marginTop:"15px",
+                marginTop: "15px",
                 opacity: fontOpacity,
-                color:"#3B4A41",
+                color: "#3B4A41",
                 transition: "opacity 1s",
               }}>
               Mision:
@@ -221,7 +227,7 @@ export default function YFSGroup() {
               gutterBottom
               sx={{
                 opacity: fontOpacity,
-                color:"#3B4A41",
+                color: "#3B4A41",
                 transition: "opacity 1s",
               }}>
               Supporting the development of agriculture through the wholesale of
@@ -234,9 +240,9 @@ export default function YFSGroup() {
               variant="h6"
               fontWeight="bold"
               sx={{
-                marginTop:"15px",
+                marginTop: "15px",
                 opacity: fontOpacity,
-                color:"#3B4A41",
+                color: "#3B4A41",
                 transition: "opacity 1s",
               }}
               gutterBottom>
@@ -263,11 +269,6 @@ export default function YFSGroup() {
                       height: "100px",
                       width: "80px",
                       borderRadius: "5px",
-                      // transition: "width 1s, height 1s",
-                      // "&:hover": {
-                      //   height: "110px",
-                      //   width: "90px",
-                      // },
                     }}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
@@ -307,6 +308,51 @@ export default function YFSGroup() {
             </Box>
           </Grid>
         </Grid>
+      </Box>
+      <Box
+        position="absolute"
+        top="120px"
+        right="0"
+        display="flex"
+        flexDirection="column"
+        gap="10px"
+        padding="0 50px">
+          <CardMedia
+          sx={{
+            visibility: showImage,
+            transition: "visibility 0.3s linear",
+            borderRadius:"5px",
+            height: "200px",
+            width: "300px",
+          }}
+          component="img"
+          image="/YFS1.png"
+          alt="YFS Group"
+        />
+        <CardMedia
+          sx={{
+            visibility: showImage,
+            transition: "visibility 0.2s linear",
+            borderRadius:"5px",
+            height: "200px",
+            width: "300px",
+          }}
+          component="img"
+          image="/YFS2.png"
+          alt="YFS Group"
+        />
+        <CardMedia
+          sx={{
+            visibility: showImage,
+            transition: "visibility 0.1s linear",
+            borderRadius:"5px",
+            height: "200px",
+            width: "300px",
+          }}
+          component="img"
+          image="/YFS3.png"
+          alt="YFS Group"
+        />
       </Box>
       <Modal
         aria-labelledby="transition-modal-title"
