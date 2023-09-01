@@ -22,13 +22,13 @@ const style = {
   top: "50%",
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: { xs: "80%", md: "70%" },
+  width: { xs: "86%", md: "70%" },
   height: { xs: "80%", md: "70%" },
   bgcolor: "whitesmoke",
   border: "1px solid #000",
   borderRadius: "10px",
   boxShadow: 24,
-  p: 4,
+  p: {xs:3, md:4},
 };
 export default function YFSGroup() {
   const [open, setOpen] = useState(false);
@@ -55,10 +55,10 @@ export default function YFSGroup() {
       <Box
         position="absolute"
         zIndex="1"
-        backgroundColor="#3B4A41"
+        backgroundColor="black"
         width="100%"
         sx={{
-          borderBottom: "1px solid black",
+          borderBottom: "1px solid #c9a868",
           padding: { xs: "15px", md: "20px 50px" },
         }}
         display="flex"
@@ -82,12 +82,12 @@ export default function YFSGroup() {
             />
             <Typography
               sx={{
-                // fontSize:{xs:"0.9rem", md:"1rem"},
+                fontSize:{xs:"0.9rem", md:"1.1rem"},
                 color: "white",
                 fontWeight: "bold",
                 transition: "all 0.5s ease",
                 "&:hover": {
-                  fontSize: "1.1rem",
+                  fontSize: "1.2rem",
                 },
               }}>
               KESATRIA HOLDING
@@ -99,7 +99,7 @@ export default function YFSGroup() {
           sx={{
             color: "white",
             fontWeight: "bold",
-            border: { xs: "1px solid white", md: "2px solid white" },
+            border: "1px solid white",
             borderRadius: "5px",
             fontSize: { xs: "0.7rem", md: "1rem" },
             padding: "5px 10px",
@@ -136,7 +136,7 @@ export default function YFSGroup() {
       <Box
         position="absolute"
         sx={{
-          top: { xs: "100px", md: "120px" },
+          top: { xs: "15%", md: "15%" },
           padding: { xs: "0 20px", md: "0 50px" },
         }}>
         <Grid
@@ -167,6 +167,10 @@ export default function YFSGroup() {
             <Typography
               fontWeight="bold"
               sx={{
+                position: { md: "absolute" },
+                top: { md: "2%" },
+                // width: "100%",
+                left: { md: "11%" },
                 fontSize: { xs: "2rem", md: "3rem" },
                 lineHeight: { xs: "2rem", md: "3rem" },
                 color: fontColor,
@@ -182,7 +186,7 @@ export default function YFSGroup() {
               fontWeight="bold"
               sx={{
                 position: { md: "absolute" },
-                top: { md: "80px" },
+                top: { md: "10%" },
                 width: "100%",
                 left: { md: "11%" },
                 paddingTop: { xs: "10px", md: "0" },
@@ -224,7 +228,6 @@ export default function YFSGroup() {
               Vision:
             </Typography>
             <Typography
-              gutterBottom
               sx={{
                 opacity: fontOpacity,
                 color: "#3B4A41",
@@ -272,7 +275,7 @@ export default function YFSGroup() {
                 opacity: fontOpacity,
                 color: "#3B4A41",
                 transition: "opacity 1s",
-                marginTop: { xs: "20px", md: "0" },
+                marginTop: { xs: "10px", md: "15px" },
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
               }}
@@ -289,16 +292,16 @@ export default function YFSGroup() {
               <Box
                 sx={{
                   background: "white",
-                  height: {md:"140px"},
-                  padding: {xs:"10px",md:"20px 10px 20px 20px"},
+                  height: { md: "140px" },
+                  padding: { xs: "10px", md: "20px 10px 20px 20px" },
                   borderTopLeftRadius: "5px",
                   borderBottomLeftRadius: "5px",
                 }}>
                 <Link href="/YFS COMPANY PROFILE.pdf">
                   <CardMedia
                     sx={{
-                      height: {xs:"65px",md:"100px"},
-                      width: {xs:"50px",md:"80px"},
+                      height: { xs: "65px", md: "100px" },
+                      width: { xs: "50px", md: "80px" },
                       borderRadius: "5px",
                     }}
                     onMouseEnter={handleMouseEnter}
@@ -313,7 +316,7 @@ export default function YFSGroup() {
                 sx={{
                   background: "white",
                   padding: "20px 30px 20px 10px",
-                  height: {md:"140px"},
+                  height: { md: "140px" },
                   borderTopRightRadius: "5px",
                   borderBottomRightRadius: "5px",
                 }}>
@@ -322,7 +325,7 @@ export default function YFSGroup() {
                     variant="h6"
                     color="black"
                     sx={{
-                      width: {xs:"200px",md:"80px"},
+                      width: { xs: "200px", md: "80px" },
                       fontSize: { xs: "1rem", md: "1.3rem" },
                       lineHeight: { xs: "1.2rem", md: "1.5rem" },
                       textAlign: "left",
@@ -347,7 +350,7 @@ export default function YFSGroup() {
           right: { md: "0" },
           position: { xs: "relative", md: "absolute" },
           padding: { xs: "0", md: "0 50px" },
-          gap:{md:"10px"},
+          gap: { md: "10px" },
         }}
         display="flex"
         flexDirection="column">
@@ -355,7 +358,7 @@ export default function YFSGroup() {
           sx={{
             visibility: showImage,
             transition: "visibility 0.3s linear",
-            borderRadius: {xs:"0",md:"5px"},
+            borderRadius: { xs: "0", md: "5px" },
             aspectRatio: "16/9",
             width: { md: "350px" },
           }}
@@ -367,7 +370,7 @@ export default function YFSGroup() {
           sx={{
             visibility: showImage,
             transition: "visibility 0.2s linear",
-            borderRadius: {xs:"0",md:"5px"},
+            borderRadius: { xs: "0", md: "5px" },
             borderRadius: "5px",
             aspectRatio: "16/9",
             width: { md: "350px" },
@@ -380,7 +383,7 @@ export default function YFSGroup() {
           sx={{
             visibility: showImage,
             transition: "visibility 0.2s linear",
-            borderRadius: {xs:"0",md:"5px"},
+            borderRadius: { xs: "0", md: "5px" },
             borderRadius: "5px",
             aspectRatio: "16/9",
             width: { md: "350px" },
@@ -404,14 +407,28 @@ export default function YFSGroup() {
         }}>
         <Fade in={open}>
           <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h6" component="h2">
+            <Typography
+              id="transition-modal-title"
+              sx={{
+                color: "black",
+                fontWeight:"bold",
+                fontSize: { xs: "1.1rem", md: "1.3rem" },
+                lineHeight: { xs: "1rem", md: "2rem" },
+              }}>
               Address
             </Typography>
-            <Typography id="transition-modal-description" gutterBottom>
+            <Typography
+              id="transition-modal-description"
+              sx={{
+                color: "black",
+                fontSize: { xs: "0.9rem", md: "1.1rem" },
+                lineHeight: { xs: "1rem", md: "2rem" },
+              }}
+              gutterBottom>
               LOT 70 & 71, SIBUGA INDUSTRIAL CENTRE, JALAN LINTAS SIBUGA, 90000
               SANDAKAN, SABAH
             </Typography>
-            <Box height="80%">
+            <Box sx={{ height: { xs: "70%", md: "80%" } }}>
               <iframe
                 width="100%"
                 height="100%"
@@ -421,46 +438,60 @@ export default function YFSGroup() {
                 id="gmap_canvas"
                 src=" https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Lintas%20Sibuga,%20Sibuga%20Industrial%20Centre,%20Lot%2070%20Sandakan+(Yun%20Fung%20Sang%20Group%20Sdn%20Bhd)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </Box>
-            <Button
-              variant="solid"
-              sx={{
-                marginTop: "10px",
-                transition: "all 0.5s ease",
-                "&:hover": {
-                  backgroundColor: "#000",
-                },
-                background: "green",
-                color: "#ffffff",
-                border: "1px solid white",
-                borderRadius: "5px",
-              }}
-              size="lg"
-              component="a"
-              href="https://wa.me/60138160355?text=Hi,%20I%20want%20to%20know%20more%20about%20YFS%20Group!"
-              endIcon={<WhatsAppIcon />}>
-              CONTACT US
-            </Button>
-            <Button
-              variant="solid"
-              sx={{
-                marginTop: "10px",
-                transition: "all 0.5s ease",
-                "&:hover": {
-                  backgroundColor: "#000",
-                },
-                background: "#221c35",
-                color: "#ffffff",
-                border: "1px solid white",
-                borderRadius: "5px",
-              }}
-              size="lg"
-              component="a"
-              onClick={() =>
-                (window.location = "mailto:marketing@yunfungsang.com")
-              }
-              endIcon={<EmailIcon />}>
-              Email Us
-            </Button>
+            <Grid
+              container
+              justifyContent="center"
+              alignItems="center"
+              >
+              <Grid item xs={12} md={6}>
+                <Button
+                  variant="solid"
+                  fullWidth
+                  sx={{
+                    fontSize: { xs: "0.8rem", md: "1rem" },
+                    lineHeight: { xs: "1rem", md: "1rem" },
+                    marginTop: "10px",
+                    transition: "all 0.5s ease",
+                    "&:hover": {
+                      backgroundColor: "#000",
+                    },
+                    background: "green",
+                    color: "#ffffff",
+                    border: "1px solid white",
+                    borderRadius: "5px",
+                  }}
+                  component="a"
+                  href="https://wa.me/60138160355?text=Hi,%20I%20want%20to%20know%20more%20about%20YFS%20Group!"
+                  endIcon={<WhatsAppIcon />}>
+                  CONTACT US
+                </Button>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Button
+                  variant="solid"
+                  fullWidth
+                  sx={{
+                    fontSize: { xs: "0.8rem", md: "1rem" },
+                    lineHeight: { xs: "1rem", md: "1rem" },
+                    marginTop: "10px",
+                    transition: "all 0.5s ease",
+                    "&:hover": {
+                      backgroundColor: "#000",
+                    },
+                    background: "#221c35",
+                    color: "#ffffff",
+                    border: "1px solid white",
+                    borderRadius: "5px",
+                  }}
+                  component="a"
+                  onClick={() =>
+                    (window.location = "mailto:marketing@yunfungsang.com")
+                  }
+                  endIcon={<EmailIcon />}>
+                  Email Us
+                </Button>
+              </Grid>
+            </Grid>
           </Box>
         </Fade>
       </Modal>

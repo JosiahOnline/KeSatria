@@ -40,8 +40,13 @@ export default function Home() {
     <Box>
       <Box
         position="absolute"
+        zIndex="1"
+        backgroundColor="black"
         width="100%"
-        padding="20px 50px"
+        sx={{
+          borderBottom: "1px solid #c9a868",
+          padding: { xs: "15px", md: "20px 50px" },
+        }}
         display="flex"
         justifyContent="space-between"
         alignItems="center"
@@ -54,8 +59,8 @@ export default function Home() {
             gap="10px">
             <CardMedia
               sx={{
-                height: "50px",
-                width: "60px",
+                height: { xs: "30px", md: "50px" },
+                width: { xs: "30px", md: "60px" },
               }}
               component="img"
               image="/KesatriaHolding1.png"
@@ -63,15 +68,13 @@ export default function Home() {
             />
             <Typography
               sx={{
-                // #c9a868
+                fontSize:{xs:"0.9rem", md:"1.1rem"},
                 color: "white",
                 fontWeight: "bold",
                 transition: "all 0.5s ease",
                 "&:hover": {
-                  fontSize: "1.1rem",
+                  fontSize: "1.2rem",
                 },
-                textShadow:
-                  "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
               }}>
               KESATRIA HOLDING
             </Typography>
@@ -80,15 +83,17 @@ export default function Home() {
         <Button
           onClick={handleOpen}
           sx={{
-            color: "#ffffff",
+            color: "white",
+            fontWeight: "bold",
             border: "1px solid white",
             borderRadius: "5px",
+            fontSize: { xs: "0.7rem", md: "1rem" },
             padding: "5px 10px",
             transition: "all 0.5s ease",
             "&:hover": {
               backgroundColor: "#c9a868",
-              color: "white",
               borderColor: "#c9a868",
+              color: "white",
             },
           }}>
           Contact Us
@@ -350,13 +355,28 @@ export default function Home() {
         }}>
         <Fade in={open}>
           <Box sx={style}>
-            <Typography id="transition-modal-title" variant="h6" component="h2">
+            <Typography
+              id="transition-modal-title"
+              sx={{
+                color: "black",
+                fontWeight:"bold",
+                fontSize: { xs: "1.1rem", md: "1.3rem" },
+                lineHeight: { xs: "1rem", md: "2rem" },
+              }}>
               Address
             </Typography>
-            <Typography id="transition-modal-description" gutterBottom>
-              Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            <Typography
+              id="transition-modal-description"
+              sx={{
+                color: "black",
+                fontSize: { xs: "0.9rem", md: "1.1rem" },
+                lineHeight: { xs: "1rem", md: "2rem" },
+              }}
+              gutterBottom>
+              LOT 70 & 71, SIBUGA INDUSTRIAL CENTRE, JALAN LINTAS SIBUGA, 90000
+              SANDAKAN, SABAH
             </Typography>
-            <Box height="80%">
+            <Box sx={{ height: { xs: "70%", md: "80%" } }}>
               <iframe
                 width="100%"
                 height="100%"
@@ -364,48 +384,62 @@ export default function Home() {
                 marginHeight="0"
                 marginWidth="0"
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Utara,%20Bandar%20Utama%20Sandakan+(Bataras%20Hypermarket%20Sandakan)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Lintas%20Sibuga,%20Sibuga%20Industrial%20Centre,%20Lot%2070%20Sandakan+(Yun%20Fung%20Sang%20Group%20Sdn%20Bhd)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </Box>
-            <Button
-              variant="solid"
-              sx={{
-                marginTop: "10px",
-                transition: "all 0.5s ease",
-                "&:hover": {
-                  backgroundColor: "#000",
-                },
-                background: "green",
-                color: "#ffffff",
-                border: "1px solid white",
-                borderRadius: "5px",
-              }}
-              size="lg"
-              component="a"
-              href="https://wa.me/60138180355?text=Hi,%20I%20want%20to%20know%20more%20about%20Kesatria%20Holding%20Sdn%20Bhd!"
-              endIcon={<WhatsAppIcon />}>
-              CONTACT US
-            </Button>
-            <Button
-              variant="solid"
-              sx={{
-                marginTop: "10px",
-                transition: "all 0.5s ease",
-                "&:hover": {
-                  backgroundColor: "#000",
-                },
-                background: "#221c35",
-                color: "#ffffff",
-                border: "1px solid white",
-                borderRadius: "5px",
-              }}
-              size="lg"
-              component="a"
-              onClick={() =>
-                (window.location = "mailto:kesatriaholding@gmail.com")
-              }
-              endIcon={<EmailIcon />}>
-              Email Us
-            </Button>
+            <Grid
+              container
+              justifyContent="center"
+              alignItems="center"
+              >
+              <Grid item xs={12} md={6}>
+                <Button
+                  variant="solid"
+                  fullWidth
+                  sx={{
+                    fontSize: { xs: "0.8rem", md: "1rem" },
+                    lineHeight: { xs: "1rem", md: "1rem" },
+                    marginTop: "10px",
+                    transition: "all 0.5s ease",
+                    "&:hover": {
+                      backgroundColor: "#000",
+                    },
+                    background: "green",
+                    color: "#ffffff",
+                    border: "1px solid white",
+                    borderRadius: "5px",
+                  }}
+                  component="a"
+                  href="https://wa.me/60138180355?text=Hi,%20I%20want%20to%20know%20more%20about%20Kesatria%20Holding%20Sdn%20Bhd!"
+                  endIcon={<WhatsAppIcon />}>
+                  CONTACT US
+                </Button>
+              </Grid>
+              <Grid item xs={12} md={6}>
+                <Button
+                  variant="solid"
+                  fullWidth
+                  sx={{
+                    fontSize: { xs: "0.8rem", md: "1rem" },
+                    lineHeight: { xs: "1rem", md: "1rem" },
+                    marginTop: "10px",
+                    transition: "all 0.5s ease",
+                    "&:hover": {
+                      backgroundColor: "#000",
+                    },
+                    background: "#221c35",
+                    color: "#ffffff",
+                    border: "1px solid white",
+                    borderRadius: "5px",
+                  }}
+                  component="a"
+                  onClick={() =>
+                    (window.location = "mailto:kesatriaholding@gmail.com")
+                  }
+                  endIcon={<EmailIcon />}>
+                  Email Us
+                </Button>
+              </Grid>
+            </Grid>
           </Box>
         </Fade>
       </Modal>
