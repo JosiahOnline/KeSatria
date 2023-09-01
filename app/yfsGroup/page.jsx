@@ -117,7 +117,7 @@ export default function YFSGroup() {
                 width: "120px",
               }}
               component="img"
-              image="/yfsLogo.png"
+              image="/YFSLogo.png"
               alt="YFS Group Sdn Bhd Logo"
             />{" "}
           </Grid>
