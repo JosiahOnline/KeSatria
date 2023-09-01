@@ -11,6 +11,7 @@ import {
   Typography,
   ImageList,
   ImageListItem,
+  Avatar,
 } from "@mui/material";
 import Link from "next/link";
 import EmailIcon from "@mui/icons-material/Email";
@@ -55,9 +56,11 @@ export default function YFSGroup() {
         position="absolute"
         zIndex="1"
         backgroundColor="#3B4A41"
-        sx={{ borderBottom: "1px solid black" }}
         width="100%"
-        padding="20px 50px"
+        sx={{
+          borderBottom: "1px solid black",
+          padding: { xs: "15px", md: "20px 50px" },
+        }}
         display="flex"
         justifyContent="space-between"
         alignItems="center"
@@ -70,8 +73,8 @@ export default function YFSGroup() {
             gap="10px">
             <CardMedia
               sx={{
-                height: "50px",
-                width: "60px",
+                height: { xs: "30px", md: "50px" },
+                width: { xs: "30px", md: "60px" },
               }}
               component="img"
               image="/KesatriaHolding1.png"
@@ -79,6 +82,7 @@ export default function YFSGroup() {
             />
             <Typography
               sx={{
+                // fontSize:{xs:"0.9rem", md:"1rem"},
                 color: "white",
                 fontWeight: "bold",
                 transition: "all 0.5s ease",
@@ -95,8 +99,9 @@ export default function YFSGroup() {
           sx={{
             color: "white",
             fontWeight: "bold",
-            border: "2px solid white",
+            border: { xs: "1px solid white", md: "2px solid white" },
             borderRadius: "5px",
+            fontSize: { xs: "0.7rem", md: "1rem" },
             padding: "5px 10px",
             transition: "all 0.5s ease",
             "&:hover": {
@@ -130,31 +135,40 @@ export default function YFSGroup() {
       />
       <Box
         position="absolute"
-        top="120px"
-        color="white"
-        fontWeight="bold"
-        padding="0 50px">
+        sx={{
+          top: { xs: "100px", md: "120px" },
+          padding: { xs: "0 20px", md: "0 50px" },
+        }}>
         <Grid
           container
           justifyContent="flex-start"
           alignItems="center"
           alignContent="center">
-          <Grid item xs={1}>
+          <Grid item xs={3} md={1}>
+            {/* <Avatar
+              alt="YFS Group Sdn Bhd"
+              src="/YFSLogo.png"
+              sx={{
+                height: { xs: "50px", md: "100px" },
+                width: { xs: "50px", md: "100px" },
+              }}  
+            /> */}
             <CardMedia
               sx={{
-                height: "100px",
-                width: "100px",
+                height: { xs: "65px", md: "100px" },
+                width: { xs: "65px", md: "100px" },
               }}
               component="img"
               image="/YFSLogo.png"
               alt="YFS Group Sdn Bhd Logo"
             />{" "}
           </Grid>
-          <Grid item xs={7}>
+          <Grid item xs={9} md={11}>
             <Typography
-              variant="h3"
               fontWeight="bold"
               sx={{
+                fontSize: { xs: "2rem", md: "3rem" },
+                lineHeight: { xs: "2rem", md: "3rem" },
                 color: fontColor,
                 transition: "font-color 0.5s",
                 textShadow:
@@ -162,11 +176,20 @@ export default function YFSGroup() {
               }}>
               Yun Fung Sang Group Sdn Bhd
             </Typography>
+          </Grid>
+          <Grid item xs={12} md={7}>
             <Typography
-              variant="h6"
               fontWeight="bold"
               sx={{
-                paddingLeft: "5px",
+                position: { md: "absolute" },
+                top: { md: "80px" },
+                width: "100%",
+                left: { md: "11%" },
+                paddingTop: { xs: "10px", md: "0" },
+                textAlign: { xs: "left", md: "left" },
+                fontSize: { xs: "0.85rem", md: "1.2rem" },
+                lineHeight: { xs: "1.2rem", md: "2rem" },
+                paddingLeft: { md: "5px" },
                 color: fontColor,
                 transition: "font-color 0.5s",
                 textShadow:
@@ -185,50 +208,56 @@ export default function YFSGroup() {
           spacing={1}
           sx={{
             marginTop: { sx: "15px", md: "30px" },
-            paddingLeft: { xs: "15px" },
+            paddingLeft: { md: "15px" },
           }}>
-          <Grid item xs={7}>
+          <Grid item xs={12} md={7}>
             <Typography
-              variant="h5"
               fontWeight="bold"
               sx={{
                 opacity: fontOpacity,
                 color: "#3B4A41",
                 transition: "opacity 1s",
+                marginTop: { xs: "15px", md: "0" },
+                fontSize: { xs: "1.2rem", md: "1.5rem" },
+                lineHeight: { xs: "1.2rem", md: "2rem" },
               }}>
               Vision:
             </Typography>
             <Typography
-              variant="h6"
               gutterBottom
               sx={{
                 opacity: fontOpacity,
                 color: "#3B4A41",
                 transition: "opacity 1s",
+                marginTop: { xs: "10px", md: "0" },
+                fontSize: { xs: "1.2rem", md: "1.5rem" },
+                lineHeight: { xs: "1.2rem", md: "2rem" },
               }}>
               To be a premier company with focus on positive contribution to
               economic development and agricultural growth of the country.{" "}
             </Typography>
           </Grid>
-          <Grid item xs={5.5}>
+          <Grid item xs={12} md={5.5}>
             <Typography
-              variant="h5"
               fontWeight="bold"
               sx={{
-                marginTop: "15px",
                 opacity: fontOpacity,
                 color: "#3B4A41",
                 transition: "opacity 1s",
+                marginTop: { xs: "10px", md: "15px" },
+                fontSize: { xs: "1.2rem", md: "1.5rem" },
+                lineHeight: { xs: "1.2rem", md: "2rem" },
               }}>
               Mision:
             </Typography>
             <Typography
-              variant="h6"
-              gutterBottom
               sx={{
                 opacity: fontOpacity,
                 color: "#3B4A41",
                 transition: "opacity 1s",
+                marginTop: { xs: "10px", md: "0" },
+                fontSize: { xs: "1.2rem", md: "1.5rem" },
+                lineHeight: { xs: "1.2rem", md: "2rem" },
               }}>
               Supporting the development of agriculture through the wholesale of
               fertilizer and agrochemical products to support agricultural
@@ -237,13 +266,15 @@ export default function YFSGroup() {
           </Grid>
           <Grid item xs={7}>
             <Typography
-              variant="h6"
               fontWeight="bold"
               sx={{
                 marginTop: "15px",
                 opacity: fontOpacity,
                 color: "#3B4A41",
                 transition: "opacity 1s",
+                marginTop: { xs: "20px", md: "0" },
+                fontSize: { xs: "1.2rem", md: "1.5rem" },
+                lineHeight: { xs: "1.2rem", md: "2rem" },
               }}
               gutterBottom>
               More Info
@@ -258,16 +289,16 @@ export default function YFSGroup() {
               <Box
                 sx={{
                   background: "white",
-                  height: "140px",
-                  padding: "20px 10px 20px 20px",
+                  height: {md:"140px"},
+                  padding: {xs:"10px",md:"20px 10px 20px 20px"},
                   borderTopLeftRadius: "5px",
                   borderBottomLeftRadius: "5px",
                 }}>
                 <Link href="/YFS COMPANY PROFILE.pdf">
                   <CardMedia
                     sx={{
-                      height: "100px",
-                      width: "80px",
+                      height: {xs:"65px",md:"100px"},
+                      width: {xs:"50px",md:"80px"},
                       borderRadius: "5px",
                     }}
                     onMouseEnter={handleMouseEnter}
@@ -282,7 +313,7 @@ export default function YFSGroup() {
                 sx={{
                   background: "white",
                   padding: "20px 30px 20px 10px",
-                  height: "140px",
+                  height: {md:"140px"},
                   borderTopRightRadius: "5px",
                   borderBottomRightRadius: "5px",
                 }}>
@@ -291,8 +322,9 @@ export default function YFSGroup() {
                     variant="h6"
                     color="black"
                     sx={{
-                      width: "80px",
-                      lineHeight: "1.2rem",
+                      width: {xs:"200px",md:"80px"},
+                      fontSize: { xs: "1rem", md: "1.3rem" },
+                      lineHeight: { xs: "1.2rem", md: "1.5rem" },
                       textAlign: "left",
                       "&:hover": {
                         color: "red",
@@ -310,20 +342,22 @@ export default function YFSGroup() {
         </Grid>
       </Box>
       <Box
-        position="absolute"
-        top="120px"
-        right="0"
+        sx={{
+          top: { md: "120px" },
+          right: { md: "0" },
+          position: { xs: "relative", md: "absolute" },
+          padding: { xs: "0", md: "0 50px" },
+          gap:{md:"10px"},
+        }}
         display="flex"
-        flexDirection="column"
-        gap="10px"
-        padding="0 50px">
-          <CardMedia
+        flexDirection="column">
+        <CardMedia
           sx={{
             visibility: showImage,
             transition: "visibility 0.3s linear",
-            borderRadius:"5px",
-            height: "200px",
-            width: "300px",
+            borderRadius: {xs:"0",md:"5px"},
+            aspectRatio: "16/9",
+            width: { md: "350px" },
           }}
           component="img"
           image="/YFS1.png"
@@ -333,9 +367,10 @@ export default function YFSGroup() {
           sx={{
             visibility: showImage,
             transition: "visibility 0.2s linear",
-            borderRadius:"5px",
-            height: "200px",
-            width: "300px",
+            borderRadius: {xs:"0",md:"5px"},
+            borderRadius: "5px",
+            aspectRatio: "16/9",
+            width: { md: "350px" },
           }}
           component="img"
           image="/YFS2.png"
@@ -344,10 +379,11 @@ export default function YFSGroup() {
         <CardMedia
           sx={{
             visibility: showImage,
-            transition: "visibility 0.1s linear",
-            borderRadius:"5px",
-            height: "200px",
-            width: "300px",
+            transition: "visibility 0.2s linear",
+            borderRadius: {xs:"0",md:"5px"},
+            borderRadius: "5px",
+            aspectRatio: "16/9",
+            width: { md: "350px" },
           }}
           component="img"
           image="/YFS3.png"

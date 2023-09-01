@@ -11,20 +11,20 @@
       "static/chunks/main-app.js",
       "static/chunks/app/yfsGroup/layout.js"
     ],
-    "/kkp/page": [
+    "/yfsGroup/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/kkp/page.js"
+      "static/chunks/app/yfsGroup/page.js"
     ],
     "/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/page.js"
     ],
-    "/yfsGroup/page": [
+    "/kkp/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/yfsGroup/page.js"
+      "static/chunks/app/kkp/page.js"
     ]
   }
 }
