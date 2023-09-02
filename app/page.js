@@ -273,7 +273,7 @@ export default function Home() {
                 padding: "20px 20px 0",
                 borderRadius: "10px",
               }}>
-              <Link href="/yfsGroup">
+              <Link href="/gxgm">
                 <CardMedia
                   component="img"
                   alt="Guang Xi Guang Ma Logo"
@@ -300,7 +300,7 @@ export default function Home() {
                 padding: "20px 20px 0",
                 borderRadius: "10px",
               }}>
-              <Link href="/abc">
+              <Link href="/futureHome">
                 <CardMedia
                   component="img"
                   alt="Future Home Logo"
@@ -423,7 +423,7 @@ export default function Home() {
                 padding: "20px 20px 0",
                 borderRadius: "10px",
               }}>
-              <Link href="/vhl">
+              <Link href="/yfsGroup">
                 <CardMedia
                   component="img"
                   alt="VHL Fertilizer Sdn Bhd"
