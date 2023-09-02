@@ -157,6 +157,7 @@ export default function Home() {
         }}>
         <Typography
           sx={{
+            color:"black",
             fontWeight: "bold",
             fontSize: { xs: "1.5rem", md: "2rem" },
             lineHeight: { xs: "1.8rem", md: "1.5rem" },
@@ -167,6 +168,7 @@ export default function Home() {
         </Typography>
         <Typography
           sx={{
+            color:"black",
             fontSize: { xs: "1.3rem", md: "1.3rem" },
             lineHeight: { xs: "1.8rem", md: "2rem" },
           }}>
@@ -363,6 +365,7 @@ export default function Home() {
         }}>
         <Typography
           sx={{
+            color:"black",
             fontWeight: "bold",
             fontSize: { xs: "1.5rem", md: "2rem" },
             lineHeight: { xs: "1.8rem", md: "1.5rem" },
@@ -374,6 +377,7 @@ export default function Home() {
         <Typography
           variant="h6"
           sx={{
+            color:"black",
             fontSize: { xs: "1.3rem", md: "1.3rem" },
             lineHeight: { xs: "1.8rem", md: "2rem" },
           }}>
