@@ -198,7 +198,7 @@ export default function Home() {
                   alt="YFS Group Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/YFSLogo.png"
+                  image="/YFSLogo-min.png"
                 />
                 <CardContent align="center">
                   <Typography
@@ -225,7 +225,7 @@ export default function Home() {
                   alt="KKP Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/KKPLogo.png"
+                  image="/KKPLogo-min.png"
                 />
                 <CardContent>
                   <Typography
@@ -279,7 +279,7 @@ export default function Home() {
                   alt="Guang Xi Guang Ma Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/GXMLogo.png"
+                  image="/GXMLogo-min.png"
                 />
                 <CardContent>
                   <Typography
@@ -306,7 +306,7 @@ export default function Home() {
                   alt="Future Home Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  // image="/ABCLogo.png"
+                  image="/FutureHome-min.png"
                 />
                 <CardContent>
                   <Typography
