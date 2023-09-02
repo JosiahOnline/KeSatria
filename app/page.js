@@ -39,6 +39,7 @@ export default function Home() {
   return (
     <Box>
       <Box
+        // Gold Color #c9a868
         position="absolute"
         zIndex="1"
         backgroundColor="black"
@@ -68,7 +69,7 @@ export default function Home() {
             />
             <Typography
               sx={{
-                fontSize:{xs:"0.9rem", md:"1.1rem"},
+                fontSize: { xs: "0.9rem", md: "1.1rem" },
                 color: "white",
                 fontWeight: "bold",
                 transition: "all 0.5s ease",
@@ -111,30 +112,64 @@ export default function Home() {
       />
       <Box
         position="absolute"
-        bottom="60px"
         color="white"
         fontWeight="bold"
-        padding="0 50px">
-        <Typography variant="h2" gutterBottom>
-          Kesatria Holding
+        sx={{
+          bottom: { xs: "10px", md: "60px" },
+          padding: { xs: "20px", md: "0 50px" },
+        }}>
+        <Typography
+          fontWeight="bold"
+          sx={{
+            fontSize: { xs: "3rem", md: "4rem" },
+            lineHeight: { xs: "3rem", md: "4rem" },
+            paddingLeft: { xs: "10px", md: "20px" },
+            textShadow:
+              "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
+          }}
+          gutterBottom>
+          KESATRIA HOLDING
         </Typography>
-        <Typography variant="h6" sx={{ width: { sx: "100%", md: "70%" } }}>
-          Kesatria Holding Sdn Bhd is a private limited company that has several
-          subsidiaries operating for over 20 years based in Sabah, Malaysia.
-          Where, the business activities carried out are concentrated in the
-          Palm Oil Industry with the total turnover of the company exceeding 50
-          Million Malaysian Ringgit (MYR) in a year.
-        </Typography>
+        <Box
+          sx={{
+            backgroundColor: "rgba(0,0,0,0.5)",
+            padding: { xs: "20px", md: "20px" },
+            borderRadius: "5px",
+          }}>
+          <Typography
+            variant="h6"
+            sx={{
+              fontSize: { xs: "1.3rem", md: "1.3rem" },
+              lineHeight: { xs: "1.8rem", md: "2rem" },
+            }}>
+            Kesatria Holding Sdn Bhd is a private limited company that has
+            several subsidiaries operating for over 20 years based in Sabah,
+            Malaysia. Where, the business activities carried out are
+            concentrated in the Palm Oil Industry with the total turnover of the
+            company exceeding 50 Million Malaysian Ringgit (MYR) in a year.
+          </Typography>
+        </Box>
       </Box>
       <Box
         sx={{
           background: "whitesmoke",
           padding: { xs: "10px 30px", md: "20px 60px" },
         }}>
-        <Typography variant="h5" gutterBottom>
+        <Typography
+          sx={{
+            fontWeight: "bold",
+            fontSize: { xs: "1.5rem", md: "2rem" },
+            lineHeight: { xs: "1.8rem", md: "1.5rem" },
+            marginTop: { xs: "25px", md: "20px" },
+            marginBottom: "15px",
+          }}>
           Meet Our Subsidiaries
         </Typography>
-        <Typography variant="h6" sx={{ width: { sx: "100%", md: "90%" } }}>
+        <Typography
+          sx={{
+            fontSize: { xs: "1.3rem", md: "1.3rem" },
+            lineHeight: { xs: "1.8rem", md: "2rem" },
+          }}>
           Kesatria Holding together with its subsidiaries will hold several more
           collaborations with higher education centers for agricultural research
           projects also government in empowering the agricultural sector,
@@ -143,15 +178,20 @@ export default function Home() {
           sustainable palm oil industry.
         </Typography>
         <Grid
-          marginTop="10px"
-          marginBottom="10px"
+          marginTop="15px"
+          marginBottom="20px"
           container
           justifyContent="flex-start"
           alignItems="center"
           alignContent="center"
           spacing={2}>
           <Grid item xs={12} md={3}>
-            <Card sx={{ maxWidth: 300, padding: "20px 20px 0" }}>
+            <Card
+              sx={{
+                maxWidth: 350,
+                padding: "20px 20px 0",
+                borderRadius: "10px",
+              }}>
               <Link href="/yfsGroup">
                 <CardMedia
                   component="img"
@@ -160,34 +200,52 @@ export default function Home() {
                   sx={{ objectFit: "contain" }}
                   image="/YFSLogo.png"
                 />
-                <CardContent>
-                  <Typography variant="h6" align="center">
-                    YFS Group
+                <CardContent align="center">
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    fontWeight="bold"
+                    color="red">
+                    LEARN MORE
                   </Typography>
                 </CardContent>
               </Link>
             </Card>
           </Grid>
           <Grid item xs={12} md={3}>
-            <Card sx={{ maxWidth: 300, padding: "20px 20px 0" }}>
+            <Card
+              sx={{
+                maxWidth: 350,
+                padding: "20px 20px 0",
+                borderRadius: "10px",
+              }}>
               <Link href="/kkp">
                 <CardMedia
                   component="img"
-                  alt="YFS Group Logo"
+                  alt="KKP Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
                   image="/KKPLogo.png"
                 />
                 <CardContent>
-                  <Typography variant="h6" align="center">
-                    Kang Ke Palm Sdn Bhd
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    fontWeight="bold"
+                    color="red">
+                    LEARN MORE
                   </Typography>
                 </CardContent>
               </Link>
             </Card>
           </Grid>
           <Grid item xs={12} md={3}>
-            <Card sx={{ maxWidth: 300, padding: "20px 20px 0" }}>
+            <Card
+              sx={{
+                maxWidth: 350,
+                padding: "20px 20px 0",
+                borderRadius: "10px",
+              }}>
               <Link href="/bhGroup">
                 <CardMedia
                   component="img"
@@ -197,15 +255,24 @@ export default function Home() {
                   image="/BHLogo.png"
                 />
                 <CardContent>
-                  <Typography variant="h5" align="center">
-                    Baja Harapan Group
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    fontWeight="bold"
+                    color="red">
+                    LEARN MORE
                   </Typography>
                 </CardContent>
               </Link>
             </Card>
           </Grid>
           <Grid item xs={12} md={3}>
-            <Card sx={{ maxWidth: 300, padding: "20px 20px 0" }}>
+            <Card
+              sx={{
+                maxWidth: 350,
+                padding: "20px 20px 0",
+                borderRadius: "10px",
+              }}>
               <Link href="/yfsGroup">
                 <CardMedia
                   component="img"
@@ -215,26 +282,39 @@ export default function Home() {
                   image="/GXMLogo.png"
                 />
                 <CardContent>
-                  <Typography variant="h5" align="center">
-                    Guang Xi Guang Ma
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    fontWeight="bold"
+                    color="red">
+                    LEARN MORE
                   </Typography>
                 </CardContent>
               </Link>
             </Card>
           </Grid>
           <Grid item xs={12} md={3}>
-            <Card sx={{ maxWidth: 300, padding: "20px 20px 0" }}>
+            <Card
+              sx={{
+                maxWidth: 350,
+                padding: "20px 20px 0",
+                borderRadius: "10px",
+              }}>
               <Link href="/abc">
                 <CardMedia
                   component="img"
-                  alt="Agri Business Consultancy Logo"
+                  alt="Future Home Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/ABCLogo.png"
+                  // image="/ABCLogo.png"
                 />
                 <CardContent>
-                  <Typography variant="h5" align="center">
-                    Future Home
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    fontWeight="bold"
+                    color="red">
+                    LEARN MORE
                   </Typography>
                 </CardContent>
               </Link>
@@ -242,69 +322,80 @@ export default function Home() {
           </Grid>
         </Grid>
       </Box>
-      <Box sx={{ background: "whitesmoke" }}>
-        <Grid
-          container
-          justifyContent="flex-start"
-          alignItems="center"
-          alignContent="center">
-          <Grid item xs={12} md={6}>
-            <CardMedia
-              component="img"
-              alt="Office"
-              sx={{ objectFit: "contain" }}
-              image="/ofiice1-min.png"
-            />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <CardMedia
-              component="img"
-              alt="Office"
-              sx={{ objectFit: "contain" }}
-              image="/office2-min.png"
-            />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <CardMedia
-              component="img"
-              alt="Office"
-              sx={{ objectFit: "contain" }}
-              image="/office3-min.png"
-            />
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <CardMedia
-              component="img"
-              alt="Office"
-              sx={{ objectFit: "contain" }}
-              image="/office4-min.png"
-            />
-          </Grid>
+      <Grid container justifyContent="center" alignItems="center">
+        <Grid item xs={12} md={6}>
+          <CardMedia
+            component="img"
+            alt="Office"
+            sx={{ objectFit: "contain" }}
+            image="/KH-min.png"
+          />
         </Grid>
-      </Box>
+        <Grid item xs={12} md={6}>
+          <CardMedia
+            component="img"
+            alt="Office"
+            sx={{ objectFit: "contain" }}
+            image="/partner3-min.png"
+          />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <CardMedia
+            component="img"
+            alt="Office"
+            sx={{ objectFit: "contain" }}
+            image="/partner1-min.png"
+          />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <CardMedia
+            component="img"
+            alt="Office"
+            sx={{ objectFit: "contain" }}
+            image="/partner2-min.png"
+          />
+        </Grid>
+      </Grid>
       <Box
         sx={{
           background: "whitesmoke",
           padding: { xs: "10px 30px", md: "20px 60px" },
         }}>
-        <Typography variant="h5" gutterBottom>
+        <Typography
+          sx={{
+            fontWeight: "bold",
+            fontSize: { xs: "1.5rem", md: "2rem" },
+            lineHeight: { xs: "1.8rem", md: "1.5rem" },
+            marginTop: { xs: "25px", md: "20px" },
+            marginBottom: "15px",
+          }}>
           Our Partnership Companies
         </Typography>
-        <Typography variant="h6" sx={{ width: { sx: "100%", md: "90%" } }}>
+        <Typography
+          variant="h6"
+          sx={{
+            fontSize: { xs: "1.3rem", md: "1.3rem" },
+            lineHeight: { xs: "1.8rem", md: "2rem" },
+          }}>
           Kesatria Holding is always open for any opportunity of comprehensive
           collaboration to achieve a win-win situation of environmental and
           economic value. Below is our valuable partnership companies:
         </Typography>
         <Grid
-          marginTop="10px"
-          marginBottom="10px"
+          marginTop="15px"
+          marginBottom="20px"
           container
-          justifyContent="flex-start"
+          justifyContent="flext-start"
           alignItems="center"
           alignContent="center"
-          spacing={3}>
+          spacing={2}>
           <Grid item xs={12} md={3}>
-            <Card sx={{ maxWidth: 300, padding: "20px 20px 0" }}>
+            <Card
+              sx={{
+                maxWidth: 350,
+                padding: "20px 20px 0",
+                borderRadius: "10px",
+              }}>
               <Link href="https://abcltd.com.my/">
                 <CardMedia
                   component="img"
@@ -314,26 +405,39 @@ export default function Home() {
                   image="/ABCLogo.png"
                 />
                 <CardContent>
-                  <Typography variant="h5" align="center">
-                    Agri Business Consultancy
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    fontWeight="bold"
+                    color="red">
+                    LEARN MORE
                   </Typography>
                 </CardContent>
               </Link>
             </Card>
           </Grid>
           <Grid item xs={12} md={3}>
-            <Card sx={{ maxWidth: 300, padding: "20px 20px 0" }}>
+            <Card
+              sx={{
+                maxWidth: 350,
+                padding: "20px 20px 0",
+                borderRadius: "10px",
+              }}>
               <Link href="/vhl">
                 <CardMedia
                   component="img"
                   alt="VHL Fertilizer Sdn Bhd"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/ABCLogo.png"
+                  // image="/ABCLogo.png"
                 />
                 <CardContent>
-                  <Typography variant="h5" align="center">
-                    VHL Fertilizer Sdn Bhd
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    fontWeight="bold"
+                    color="red">
+                    LEARN MORE
                   </Typography>
                 </CardContent>
               </Link>
@@ -359,7 +463,7 @@ export default function Home() {
               id="transition-modal-title"
               sx={{
                 color: "black",
-                fontWeight:"bold",
+                fontWeight: "bold",
                 fontSize: { xs: "1.1rem", md: "1.3rem" },
                 lineHeight: { xs: "1rem", md: "2rem" },
               }}>
@@ -386,11 +490,7 @@ export default function Home() {
                 id="gmap_canvas"
                 src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Lintas%20Sibuga,%20Sibuga%20Industrial%20Centre,%20Lot%2070%20Sandakan+(Yun%20Fung%20Sang%20Group%20Sdn%20Bhd)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </Box>
-            <Grid
-              container
-              justifyContent="center"
-              alignItems="center"
-              >
+            <Grid container justifyContent="center" alignItems="center">
               <Grid item xs={12} md={6}>
                 <Button
                   variant="solid"

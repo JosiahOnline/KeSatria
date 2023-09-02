@@ -9,9 +9,6 @@ import {
   Backdrop,
   Modal,
   Typography,
-  ImageList,
-  ImageListItem,
-  Avatar,
 } from "@mui/material";
 import Link from "next/link";
 import EmailIcon from "@mui/icons-material/Email";
@@ -51,7 +48,7 @@ export default function YFSGroup() {
     setShowImage("visible");
   };
   return (
-    <Box>
+    <Box>     
       <Box
         position="absolute"
         zIndex="1"
