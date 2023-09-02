@@ -1,9 +1,8 @@
 import React from 'react'
 
-function FutureHome() {
+export default function FutureHome() {
   return (
-    <div>VHL</div>
+    <div>Future Home</div>
   )
 }
 
-export default VHL
