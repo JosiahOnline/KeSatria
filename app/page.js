@@ -40,7 +40,7 @@ export default function Home() {
     <Box>
       <Box
         // Gold Color #c9a868
-        position="absolute"
+        position="fixed"
         zIndex="1"
         backgroundColor="black"
         width="100%"
@@ -328,7 +328,7 @@ export default function Home() {
             component="img"
             alt="Office"
             sx={{ objectFit: "contain" }}
-            image="/KH-min.png"
+            image="/KH2-min.png"
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -429,7 +429,7 @@ export default function Home() {
                   alt="VHL Fertilizer Sdn Bhd"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  // image="/ABCLogo.png"
+                  image="/VHLlogo.png"
                 />
                 <CardContent>
                   <Typography

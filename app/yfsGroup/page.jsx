@@ -25,32 +25,32 @@ const style = {
   border: "1px solid #000",
   borderRadius: "10px",
   boxShadow: 24,
-  p: {xs:3, md:4},
+  p: { xs: 3, md: 4 },
 };
 export default function YFSGroup() {
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  const [boxOpacity, setBoxOpacity] = useState(0.8);
-  const [fontColor, setFontColor] = useState("#3B4A41");
-  const [fontOpacity, setFontOpacity] = useState(1);
-  const [showImage, setShowImage] = useState("visible");
-  const handleMouseEnter = () => {
-    setBoxOpacity(0);
-    setFontColor("white");
-    setFontOpacity(0);
-    setShowImage("hidden");
-  };
-  const handleMouseLeave = () => {
-    setBoxOpacity(0.8);
-    setFontColor("#3B4A41");
-    setFontOpacity(1);
-    setShowImage("visible");
-  };
+  // const [boxOpacity, setBoxOpacity] = useState(0.1);
+  // const [fontColor, setFontColor] = useState("#3B4A41");
+  // const [fontOpacity, setFontOpacity] = useState(1);
+  // const [showImage, setShowImage] = useState("visible");
+  // const handleMouseEnter = () => {
+  //   setBoxOpacity(0);
+  //   setFontColor("white");
+  //   setFontOpacity(0);
+  //   setShowImage("hidden");
+  // };
+  // const handleMouseLeave = () => {
+  //   setBoxOpacity(0.8);
+  //   setFontColor("#3B4A41");
+  //   setFontOpacity(1);
+  //   setShowImage("visible");
+  // };
   return (
-    <Box>     
+    <Box>
       <Box
-        position="absolute"
+        position="fixed"
         zIndex="1"
         backgroundColor="black"
         width="100%"
@@ -79,7 +79,7 @@ export default function YFSGroup() {
             />
             <Typography
               sx={{
-                fontSize:{xs:"0.9rem", md:"1.1rem"},
+                fontSize: { xs: "0.9rem", md: "1.1rem" },
                 color: "white",
                 fontWeight: "bold",
                 transition: "all 0.5s ease",
@@ -124,9 +124,9 @@ export default function YFSGroup() {
         position="absolute"
         sx={{
           top: "0",
-          height: "100vh",
+          // height: "100vh",
           width: "100%",
-          backgroundColor: `rgba(255, 255, 255, ${boxOpacity})`,
+          backgroundColor: `rgba(255, 255, 255, 0)`,
           transition: "background-color 1s",
         }}
       />
@@ -142,21 +142,13 @@ export default function YFSGroup() {
           alignItems="center"
           alignContent="center">
           <Grid item xs={3} md={1}>
-            {/* <Avatar
-              alt="YFS Group Sdn Bhd"
-              src="/YFSLogo.png"
-              sx={{
-                height: { xs: "50px", md: "100px" },
-                width: { xs: "50px", md: "100px" },
-              }}  
-            /> */}
             <CardMedia
               sx={{
                 height: { xs: "65px", md: "100px" },
                 width: { xs: "65px", md: "100px" },
               }}
               component="img"
-              image="/YFSLogo.png"
+              image="/YFSLogo-min.png"
               alt="YFS Group Sdn Bhd Logo"
             />{" "}
           </Grid>
@@ -170,7 +162,7 @@ export default function YFSGroup() {
                 left: { md: "11%" },
                 fontSize: { xs: "2rem", md: "3rem" },
                 lineHeight: { xs: "2rem", md: "3rem" },
-                color: fontColor,
+                color: "white",
                 transition: "font-color 0.5s",
                 textShadow:
                   "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
@@ -191,7 +183,7 @@ export default function YFSGroup() {
                 fontSize: { xs: "0.85rem", md: "1.2rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
                 paddingLeft: { md: "5px" },
-                color: fontColor,
+                color: "white",
                 transition: "font-color 0.5s",
                 textShadow:
                   "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
@@ -215,23 +207,29 @@ export default function YFSGroup() {
             <Typography
               fontWeight="bold"
               sx={{
-                opacity: fontOpacity,
-                color: "#3B4A41",
+                // opacity: fontOpacity,
+                // color: "#3B4A41",
+                color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "15px", md: "0" },
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
+                textShadow:
+                  "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
               }}>
               Vision:
             </Typography>
             <Typography
               sx={{
-                opacity: fontOpacity,
-                color: "#3B4A41",
+                // opacity: fontOpacity,
+                color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "10px", md: "0" },
+                marginBottom: { xs: "15px", md: "0" },
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
+                textShadow:
+                  "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
               }}>
               To be a premier company with focus on positive contribution to
               economic development and agricultural growth of the country.{" "}
@@ -241,101 +239,104 @@ export default function YFSGroup() {
             <Typography
               fontWeight="bold"
               sx={{
-                opacity: fontOpacity,
-                color: "#3B4A41",
+                // opacity: fontOpacity,
+                color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "10px", md: "15px" },
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
+                textShadow:
+                  "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
               }}>
               Mision:
             </Typography>
             <Typography
               sx={{
-                opacity: fontOpacity,
-                color: "#3B4A41",
+                // opacity: fontOpacity,
+                color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "10px", md: "0" },
+                marginBottom: { xs: "20px", md: "0" },
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
+                textShadow:
+                  "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
               }}>
               Supporting the development of agriculture through the wholesale of
               fertilizer and agrochemical products to support agricultural
               activities for crop production on a fee or contract basis.
             </Typography>
           </Grid>
-          <Grid item xs={7}>
+          <Grid item xs={12}>
             <Typography
               fontWeight="bold"
               sx={{
-                marginTop: "15px",
-                opacity: fontOpacity,
-                color: "#3B4A41",
+                // opacity: fontOpacity,
+                color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "10px", md: "15px" },
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
+                textShadow:
+                  "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
               }}
               gutterBottom>
               More Info
             </Typography>
-            <Box
-              sx={{
-                borderRadius: "5px",
-                display: "flex",
-                justifyContent: "flex-start",
-                alignItems: "center",
-              }}>
+            <Box sx={{width:{xs:"100%", md:"20%"},}} backgroundColor="whitesmoke" borderRadius="5px">
               <Box
                 sx={{
-                  background: "white",
-                  height: { md: "140px" },
-                  padding: { xs: "10px", md: "20px 10px 20px 20px" },
-                  borderTopLeftRadius: "5px",
-                  borderBottomLeftRadius: "5px",
+                  borderRadius: "5px",
+                  display: "flex",
+                  justifyContent: "flex-start",
+                  alignItems: "center",
                 }}>
-                <Link href="/YFS COMPANY PROFILE.pdf">
-                  <CardMedia
-                    sx={{
-                      height: { xs: "65px", md: "100px" },
-                      width: { xs: "50px", md: "80px" },
-                      borderRadius: "5px",
-                    }}
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    component="img"
-                    image="/PDFDL.jpeg"
-                    alt="Download Our Company PDF"
-                  />
-                </Link>
-              </Box>
-              <Box
-                sx={{
-                  background: "white",
-                  padding: "20px 30px 20px 10px",
-                  height: { md: "140px" },
-                  borderTopRightRadius: "5px",
-                  borderBottomRightRadius: "5px",
-                }}>
-                <Link href="/YFS COMPANY PROFILE.pdf">
-                  <Typography
-                    variant="h6"
-                    color="black"
-                    sx={{
-                      width: { xs: "200px", md: "80px" },
-                      fontSize: { xs: "1rem", md: "1.3rem" },
-                      lineHeight: { xs: "1.2rem", md: "1.5rem" },
-                      textAlign: "left",
-                      "&:hover": {
-                        color: "red",
-                      },
-                    }}
-                    gutterBottom
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}>
-                    Download our company profile
-                  </Typography>
-                </Link>
+                <Box
+                  sx={{
+                    height: { md: "140px" },
+                    padding: { xs: "10px", md: "20px 10px 20px 20px" },
+                  }}>
+                  <Link href="/YFS COMPANY PROFILE.pdf">
+                    <CardMedia
+                      sx={{
+                        height: { xs: "65px", md: "100px" },
+                        width: { xs: "50px", md: "80px" },
+                        borderRadius: "5px",
+                      }}
+                      // onMouseEnter={handleMouseEnter}
+                      // onMouseLeave={handleMouseLeave}
+                      component="img"
+                      image="/PDFDL.jpeg"
+                      alt="Download Our Company PDF"
+                    />
+                  </Link>
+                </Box>
+                <Box
+                  sx={{
+                    padding: "20px 30px 20px 10px",
+                    height: { md: "140px" },
+                  }}>
+                  <Link href="/YFS COMPANY PROFILE.pdf">
+                    <Typography
+                      variant="h6"
+                      color="black"
+                      sx={{
+                        width: { xs: "200px", md: "80px" },
+                        fontSize: { xs: "1rem", md: "1.3rem" },
+                        lineHeight: { xs: "1.2rem", md: "1.5rem" },
+                        textAlign: "left",
+                        "&:hover": {
+                          color: "red",
+                        },
+                      }}
+                      gutterBottom
+                      // onMouseEnter={handleMouseEnter}
+                      // onMouseLeave={handleMouseLeave}
+                    >
+                      Download our company profile
+                    </Typography>
+                  </Link>
+                </Box>
               </Box>
             </Box>
           </Grid>
@@ -353,7 +354,7 @@ export default function YFSGroup() {
         flexDirection="column">
         <CardMedia
           sx={{
-            visibility: showImage,
+            // visibility: showImage,
             transition: "visibility 0.3s linear",
             borderRadius: { xs: "0", md: "5px" },
             aspectRatio: "16/9",
@@ -365,7 +366,7 @@ export default function YFSGroup() {
         />
         <CardMedia
           sx={{
-            visibility: showImage,
+            // visibility: showImage,
             transition: "visibility 0.2s linear",
             borderRadius: { xs: "0", md: "5px" },
             borderRadius: "5px",
@@ -378,7 +379,7 @@ export default function YFSGroup() {
         />
         <CardMedia
           sx={{
-            visibility: showImage,
+            // visibility: showImage,
             transition: "visibility 0.2s linear",
             borderRadius: { xs: "0", md: "5px" },
             borderRadius: "5px",
@@ -408,7 +409,7 @@ export default function YFSGroup() {
               id="transition-modal-title"
               sx={{
                 color: "black",
-                fontWeight:"bold",
+                fontWeight: "bold",
                 fontSize: { xs: "1.1rem", md: "1.3rem" },
                 lineHeight: { xs: "1rem", md: "2rem" },
               }}>
@@ -435,11 +436,7 @@ export default function YFSGroup() {
                 id="gmap_canvas"
                 src=" https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Lintas%20Sibuga,%20Sibuga%20Industrial%20Centre,%20Lot%2070%20Sandakan+(Yun%20Fung%20Sang%20Group%20Sdn%20Bhd)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
             </Box>
-            <Grid
-              container
-              justifyContent="center"
-              alignItems="center"
-              >
+            <Grid container justifyContent="center" alignItems="center">
               <Grid item xs={12} md={6}>
                 <Button
                   variant="solid"
