@@ -281,7 +281,7 @@ export default function Home() {
                   alt="Guang Xi Guang Ma Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/Logo/GXMLogo-min.png"
+                  image="/Logo/GXGMLogo-min.png"
                 />
                 <CardContent>
                   <Typography
