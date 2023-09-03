@@ -1,9 +1,47 @@
-import React from 'react'
+"use client";
+import React, { useState } from "react";
+import { Box } from "@mui/material";
+import Subsidiaries from "../component/subsidiaries";
+const SubData = {
+  Logo: "/Logo/BHLogo.png",
+  Alt: "Baja Harapan Group",
+  company: "Baja Harapan Group",
+  description: "WHOSALE OF FERTILIZER OF AGROCHEMICAL PRODUCT",
+  vision:
+    "To be a premier company with focus on positive contribution to economic development and agricultural growth of the country.",
+  mission:
+    "Supporting the development of agriculture through the wholesale of fertilizer and agrochemical products to support agricultural activities for crop production on a fee or contract basis.",
+  pdfDownload: "/PDF/Baja Harapan Group Sdn Bhd_Business Profile-min.pdf",
+  bgHero: "/BHGroup/BHGroupHero-min.png",
+  image1: "/BHGroup/BHGroup1-min.png",
+  image2: "/BHGroup/BHGroup2-min.png",
+  image3: "/BHGroup/BHGroup3-min.png",
+  address:
+    "LOT 70 & 71, SIBUGA INDUSTRIAL CENTRE, JALAN LINTAS SIBUGA, 90000 SANDAKAN, SABAH",
+  contact:
+    "https://wa.me/60138160355?text=Hi,%20I%20want%20to%20know%20more%20about%20Kang%20Ke%20Palm%20Sdn%20Bhd!",
+  email: "mailto:marketing@yunfungsang",
+};
 
-function BHGroup() {
+export default function YFSGroup() {
   return (
-    <div>Baja Harapan Group</div>
-  )
+    <Box>
+      <Subsidiaries
+        Logo={SubData.Logo}
+        Alt={SubData.Alt}
+        company={SubData.company}
+        description={SubData.description}
+        vision={SubData.vision}
+        mission={SubData.mission}
+        pdfDownload={SubData.pdfDownload}
+        bgHero={SubData.bgHero}
+        image1={SubData.image1}
+        image2={SubData.image2}
+        image3={SubData.image3}
+        address={SubData.address}
+        contact={SubData.contact}
+        email={SubData.email}
+      />
+    </Box>
+  );
 }
-
-export default BHGroup

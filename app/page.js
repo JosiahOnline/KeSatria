@@ -64,7 +64,7 @@ export default function Home() {
                 width: { xs: "30px", md: "60px" },
               }}
               component="img"
-              image="/KesatriaHolding1.png"
+              image="/Logo/KesatriaHolding1.png"
               alt="Kesatria Holding Sdn Bhd Logo"
             />
             <Typography
@@ -187,7 +187,7 @@ export default function Home() {
           alignItems="center"
           alignContent="center"
           spacing={2}>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -200,21 +200,21 @@ export default function Home() {
                   alt="YFS Group Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/YFSLogo-min.png"
+                  image="/Logo/YFSLogo-min.png"
                 />
                 <CardContent align="center">
                   <Typography
                     variant="h6"
                     align="center"
                     fontWeight="bold"
-                    color="red">
-                    LEARN MORE
+                    color="black">
+                    Learn More
                   </Typography>
                 </CardContent>
               </Link>
             </Card>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -227,21 +227,21 @@ export default function Home() {
                   alt="KKP Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/KKPLogo-min.png"
+                  image="/Logo/KKPLogo-min.png"
                 />
                 <CardContent>
                   <Typography
                     variant="h6"
                     align="center"
                     fontWeight="bold"
-                    color="red">
-                    LEARN MORE
+                    color="black">
+                    Learn More
                   </Typography>
                 </CardContent>
               </Link>
             </Card>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -254,21 +254,21 @@ export default function Home() {
                   alt="Baja Harapan Group Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/BHLogo.png"
+                  image="/Logo/BHLogo.png"
                 />
                 <CardContent>
                   <Typography
                     variant="h6"
                     align="center"
                     fontWeight="bold"
-                    color="red">
-                    LEARN MORE
+                    color="black">
+                    Learn More
                   </Typography>
                 </CardContent>
               </Link>
             </Card>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -281,21 +281,21 @@ export default function Home() {
                   alt="Guang Xi Guang Ma Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/GXMLogo-min.png"
+                  image="/Logo/GXMLogo-min.png"
                 />
                 <CardContent>
                   <Typography
                     variant="h6"
                     align="center"
                     fontWeight="bold"
-                    color="red">
-                    LEARN MORE
+                    color="black">
+                    Learn More
                   </Typography>
                 </CardContent>
               </Link>
             </Card>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -308,15 +308,15 @@ export default function Home() {
                   alt="Future Home Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/FutureHome-min.png"
+                  image="/Logo/FutureHome-min.png"
                 />
                 <CardContent>
                   <Typography
                     variant="h6"
                     align="center"
                     fontWeight="bold"
-                    color="red">
-                    LEARN MORE
+                    color="black">
+                    Learn More
                   </Typography>
                 </CardContent>
               </Link>
@@ -393,7 +393,7 @@ export default function Home() {
           alignItems="center"
           alignContent="center"
           spacing={2}>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -406,45 +406,45 @@ export default function Home() {
                   alt="Agri Business Consultancy Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/ABCLogo.png"
+                  image="/Logo/ABCLogo.png"
                 />
                 <CardContent>
                   <Typography
                     variant="h6"
                     align="center"
                     fontWeight="bold"
-                    color="red">
-                    LEARN MORE
+                    color="black">
+                    Learn More
                   </Typography>
                 </CardContent>
               </Link>
             </Card>
           </Grid>
-          <Grid item xs={12} md={3}>
+          <Grid item xs={12} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
                 padding: "20px 20px 0",
                 borderRadius: "10px",
               }}>
-              <Link href="/yfsGroup">
+              {/* <Link href="/yfsGroup"> */}
                 <CardMedia
                   component="img"
                   alt="VHL Fertilizer Sdn Bhd"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/VHLlogo.png"
+                  image="/Logo/VHLlogo.png"
                 />
-                <CardContent>
+                {/* <CardContent>
                   <Typography
                     variant="h6"
                     align="center"
                     fontWeight="bold"
-                    color="red">
-                    LEARN MORE
+                    color="black">
+                    Learn More
                   </Typography>
-                </CardContent>
-              </Link>
+                </CardContent> */}
+              {/* </Link> */}
             </Card>
           </Grid>
         </Grid>
