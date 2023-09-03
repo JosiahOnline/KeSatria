@@ -431,7 +431,7 @@ export default function Home() {
                 <CardMedia
                   component="img"
                   alt="VHL Fertilizer Sdn Bhd"
-                  height="200px"
+                  height="272px"
                   sx={{ objectFit: "contain" }}
                   image="/Logo/VHLlogo.png"
                 />

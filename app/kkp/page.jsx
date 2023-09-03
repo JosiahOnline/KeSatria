@@ -1,9 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import {
   Box,
 } from "@mui/material";
-import Subsidiaries from "../component/subsidiaries";
+import SpecialKKP from "../component/specialKKP";
 const SubData = {
   Logo: "/Logo/KKPLogo-min.png",
   Alt: "Kang Ke Palm Sdn Bhd",
@@ -28,7 +28,7 @@ const SubData = {
 export default function KKP() {
   return (
     <Box>
-      <Subsidiaries
+      <SpecialKKP
         Logo={SubData.Logo}
         Alt={SubData.Alt}
         company={SubData.company}
