@@ -19,11 +19,11 @@ const SubData = {
   address:
     "LOT 70 & 71, SIBUGA INDUSTRIAL CENTRE, JALAN LINTAS SIBUGA, 90000 SANDAKAN, SABAH",
   contact:
-    "https://wa.me/60138160355?text=Hi,%20I%20want%20to%20know%20more%20about%20Kang%20Ke%20Palm%20Sdn%20Bhd!",
+    "https://wa.me/60138160355?text=Hi,%20I%20want%20to%20know%20more%20about%20Baja%20Harapan%20Group!",
   email: "mailto:marketing@yunfungsang",
 };
 
-export default function YFSGroup() {
+export default function BHGroup() {
   return (
     <Box>
       <Subsidiaries

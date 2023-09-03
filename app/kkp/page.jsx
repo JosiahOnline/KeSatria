@@ -25,7 +25,7 @@ const SubData = {
   email: "mailto:financekangkepalmsdnbhd@gmail.com",
 };
 
-export default function YFSGroup() {
+export default function KKP() {
   return (
     <Box>
       <Subsidiaries
