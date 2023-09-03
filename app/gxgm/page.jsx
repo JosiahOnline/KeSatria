@@ -7,8 +7,8 @@ import Subsidiaries from "../component/subsidiaries";
 const SubData = {
   Logo: "/Logo/GXGMLogo-min.png",
   Alt: "Guang Xi Guang Ma International Trade",
-  company: "Guang Xi Guang Ma International Trade",
-  description: "Lorem ipsum dolor sit amet",
+  company: "Guang Xi Guang Ma",
+  description: "International Trade",
   vision:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare lectus sit amet est placerat in egestas. ",
   mission:
