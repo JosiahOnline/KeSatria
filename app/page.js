@@ -433,7 +433,7 @@ export default function Home() {
                   alt="VHL Fertilizer Sdn Bhd"
                   height="272px"
                   sx={{ objectFit: "contain" }}
-                  image="/Logo/VHLlogo.png"
+                  image="/Logo/VHLlogo-min.png"
                 />
                 {/* <CardContent>
                   <Typography
