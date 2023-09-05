@@ -218,7 +218,7 @@ export default function Subsidiaries({
             marginTop: { sx: "15px", md: "30px" },
             paddingLeft: { md: "15px" },
           }}>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={8}>
             <Typography
               fontWeight="bold"
               sx={{
@@ -249,7 +249,7 @@ export default function Subsidiaries({
               {vision}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={5.5}>
+          <Grid item xs={12} md={8}>
             <Typography
               fontWeight="bold"
               sx={{

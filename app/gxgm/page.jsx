@@ -6,23 +6,23 @@ import {
 import Subsidiaries from "../component/subsidiaries";
 const SubData = {
   Logo: "/Logo/GXGMLogo-min.png",
-  Alt: "Guang Xi Guang Ma International Trade",
+  Alt: "Guang Xi Guang Ma",
   company: "Guang Xi Guang Ma",
-  description: "International Trade",
+  description: "INTERNATIONAL TRADE CO. LTD",
   vision:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare lectus sit amet est placerat in egestas. ",
+    "To emerge as a global leader in international trade and related services, contributing significantly to the economic development and prosperity of the regions we operate in.",
   mission:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ornare lectus sit amet est placerat in egestas. ",
-  pdfDownload: "",
+    "To be a catalyst for global trade, promote sustainable agriculture, and deliver reliable import and export services. We aspire to be the preferred partner for businesses seeking growth and success in the global marketplace.",
+  pdfDownload: "/PDF/GuangXiGuangMa International Trade Co.,Ltd._Company Profile-min.pdf",
   bgHero: "/GXGM/GXGMHero-min.png",
-  image1: "",
-  image2: "",
-  image3: "",
+  image1: "/GXGM/GXGM1-min.png",
+  image2: "/GXGM/GXGM2-min.png",
+  image3: "/GXGM/GXGM3-min.png",
   address:
     "LOT 70 & 71, SIBUGA INDUSTRIAL CENTRE, JALAN LINTAS SIBUGA, 90000 SANDAKAN, SABAH",
   contact:
-    "https://wa.me/60108818233?text=Hi,%20I%20want%20to%20know%20more%20about%20Future%20Home!",
-  email: "mailto:futurehome.mm2h@gmail.com",
+    "https://wa.me/60108818233?text=Hi,%20I%20want%20to%20know%20more%20about%20GXGM%20International%20Trade%20Co.%20Ltd!",
+  email: "mailto:gmit.co.ltd@gmail.com",
 };
 
 export default function GXGM() {

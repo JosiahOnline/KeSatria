@@ -12,8 +12,8 @@ const SubData = {
   vision:
     "To establish Future Home (MM2H) Sdn Bhd as a prominent player in the MM2H industry, renowned for its exceptional customer-centric approach, innovative offerings, and ethical business practices.",
   mission:
-    "Our mission is to be the preferred choice for individuals seeking a second home in Malaysia, offering unparalleled hospitality, enriching experiences, and personalized services that exceed expectations.",
-  pdfDownload: "",
+    "To be the preferred choice for individuals seeking a second home in Malaysia, offering unparalleled hospitality, enriching experiences, and personalized services that exceed expectations.",
+  pdfDownload: "/PDF/Future Home (MM2H)_Company Profile-min.pdf",
   bgHero: "/FH/FHHero-min.png",
   image1: "/FH/FH1-min.png",
   image2: "/FH/FH2-min.png",
