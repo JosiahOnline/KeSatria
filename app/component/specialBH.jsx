@@ -46,22 +46,6 @@ export default function Subsidiaries({
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  // const [boxOpacity, setBoxOpacity] = useState(0.1);
-  // const [fontColor, setFontColor] = useState("#3B4A41");
-  // const [fontOpacity, setFontOpacity] = useState(1);
-  // const [showImage, setShowImage] = useState("visible");
-  // const handleMouseEnter = () => {
-  //   setBoxOpacity(0);
-  //   setFontColor("white");
-  //   setFontOpacity(0);
-  //   setShowImage("hidden");
-  // };
-  // const handleMouseLeave = () => {
-  //   setBoxOpacity(0.8);
-  //   setFontColor("#3B4A41");
-  //   setFontOpacity(1);
-  //   setShowImage("visible");
-  // };
   return (
     <Box>
       <Box
@@ -153,29 +137,31 @@ export default function Subsidiaries({
         }}>
         <Grid
           container
+          direction="row"
           justifyContent="flex-start"
-          alignItems="center"
-          alignContent="center">
-          <Grid item xs={3} md={1}>
+          alignItems="flex-start"
+          alignContent="flex-start">
+          <Grid item xs={12} md={3}>
             <CardMedia
-              sx={{
-                height: { xs: "65px", md: "100px" },
-                width: { xs: "65px", md: "100px" },
-              }}
               component="img"
               image={Logo}
               alt={Alt}
-            />{" "}
-          </Grid>
-          <Grid item xs={9} md={11}>
+              sx={{
+                objectFit: "cover",
+                height: { xs: "100px", md: "100px" },
+                backgroundPosition: "left",
+                marginLeft: { xs: "-13%", md: "-10%" },
+                marginBottom: "15px",
+              }}
+            />
             <Typography
               fontWeight="bold"
               sx={{
                 position: { md: "absolute" },
                 top: { md: "2%" },
                 // width: "100%",
-                left: { md: "11%" },
-                fontSize: { xs: "2rem", md: "3rem" },
+                left: { md: "22.5%" },
+                fontSize: { xs: "1.8rem", md: "3rem" },
                 lineHeight: { xs: "2rem", md: "3rem" },
                 color: "white",
                 transition: "font-color 0.5s",
@@ -192,7 +178,7 @@ export default function Subsidiaries({
                 position: { md: "absolute" },
                 top: { md: "10%" },
                 width: "100%",
-                left: { md: "11%" },
+                left: { md: "22.5%" },
                 paddingTop: { xs: "10px", md: "0" },
                 textAlign: { xs: "left", md: "left" },
                 fontSize: { xs: "0.85rem", md: "1.2rem" },
@@ -215,10 +201,10 @@ export default function Subsidiaries({
           alignContent="center"
           spacing={1}
           sx={{
-            marginTop: { sx: "15px", md: "30px" },
+            marginTop: { sx: "15px", md: "15px" },
             paddingLeft: { md: "15px" },
           }}>
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={7}>
             <Typography
               fontWeight="bold"
               sx={{
@@ -249,7 +235,7 @@ export default function Subsidiaries({
               {vision}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={5.5}>
             <Typography
               fontWeight="bold"
               sx={{

@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { Box } from "@mui/material";
-import Subsidiaries from "../component/subsidiaries";
+import SpecialBH from "../component/specialBH";
 const SubData = {
-  Logo: "/Logo/BHLogo.png",
+  Logo: "/Logo/BHLogo1-min.jpg",
   Alt: "Baja Harapan Group",
   company: "Baja Harapan Group",
   description: "WHOSALE OF FERTILIZER OF AGROCHEMICAL PRODUCT",
@@ -26,7 +26,7 @@ const SubData = {
 export default function BHGroup() {
   return (
     <Box>
-      <Subsidiaries
+      <SpecialBH
         Logo={SubData.Logo}
         Alt={SubData.Alt}
         company={SubData.company}

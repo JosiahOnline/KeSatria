@@ -5,7 +5,7 @@ import {
 } from "@mui/material";
 import SpecialKKP from "../component/specialKKP";
 const SubData = {
-  Logo: "/Logo/KKPLogo-min.png",
+  Logo: "/Logo/KKPLogo1-min.png",
   Alt: "Kang Ke Palm Sdn Bhd",
   company: "Kang Ke Palm Sdn Bhd",
   description: "DEALER FRUIT, PLANTATION MANAGEMENT & MANPOWER SERVICES",
@@ -18,8 +18,7 @@ const SubData = {
   image1: "/KKP/KKP1-min.png",
   image2: "/KKP/KKP2-min.png",
   image3: "/KKP/KKP3-min.png",
-  address:
-    "LOT 69, 70 & 71, SIBUGA INDUSTRIAL CENTRE, JALAN LINTAS SIBUGA, 90000 SANDAKAN, SABAH",
+  address: "Kinabatangan, Sabah",  
   contact:
     "https://wa.me/60108818233?text=Hi,%20I%20want%20to%20know%20more%20about%20Kang%20Ke%20Palm%20Sdn%20Bhd!",
   email: "mailto:financekangkepalmsdnbhd@gmail.com",

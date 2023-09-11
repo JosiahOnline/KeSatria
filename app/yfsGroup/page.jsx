@@ -14,7 +14,7 @@ const SubData = {
   mission:
     "Supporting the development of agriculture through the wholesale of fertilizer and agrochemical products to support agricultural activities for crop production on a fee or contract basis.",
   pdfDownload: "/PDF/YFS COMPANY PROFILE-min.pdf",
-  bgHero: "/YFS/yfsHero.jpg",
+  bgHero: "/YFS/yfsHero.png",
   image1: "/YFS/YFS1.png",
   image2: "/YFS/YFS2.png",
   image3: "/YFS/YFS3.png",

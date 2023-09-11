@@ -61,7 +61,7 @@ export default function Home() {
             <CardMedia
               sx={{
                 height: { xs: "30px", md: "50px" },
-                width: { xs: "30px", md: "60px" },
+                width: { xs: "30px", md: "50px" },
               }}
               component="img"
               image="/Logo/KesatriaHolding1.png"
@@ -254,7 +254,7 @@ export default function Home() {
                   alt="Baja Harapan Group Logo"
                   height="200px"
                   sx={{ objectFit: "contain" }}
-                  image="/Logo/BHLogo.png"
+                  image="/Logo/BHLogo-min.png"
                 />
                 <CardContent>
                   <Typography
@@ -330,7 +330,7 @@ export default function Home() {
             component="img"
             alt="Office"
             sx={{ objectFit: "contain" }}
-            image="/KH2-min.png"
+            image="/kesatria/1min.png"
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -338,7 +338,7 @@ export default function Home() {
             component="img"
             alt="Office"
             sx={{ objectFit: "contain" }}
-            image="/partner3-min.png"
+            image="/kesatria/2min.png"
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -346,7 +346,7 @@ export default function Home() {
             component="img"
             alt="Office"
             sx={{ objectFit: "contain" }}
-            image="/partner1-min.png"
+            image="/kesatria/3min.png"
           />
         </Grid>
         <Grid item xs={12} md={6}>
@@ -354,7 +354,7 @@ export default function Home() {
             component="img"
             alt="Office"
             sx={{ objectFit: "contain" }}
-            image="/partner2-min.png"
+            image="/kesatria/4min.png"
           />
         </Grid>
       </Grid>
