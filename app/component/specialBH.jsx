@@ -36,9 +36,6 @@ export default function SpecialBH({
   mission,
   pdfDownload,
   bgHero,
-  image1,
-  image2,
-  image3,
   address,
   contact,
   email,
@@ -307,8 +304,6 @@ export default function SpecialBH({
                         width: { xs: "50px", md: "80px" },
                         borderRadius: "5px",
                       }}
-                      // onMouseEnter={handleMouseEnter}
-                      // onMouseLeave={handleMouseLeave}
                       component="img"
                       image="/PDFDL.jpeg"
                       alt="Download Our Company PDF"
@@ -334,8 +329,6 @@ export default function SpecialBH({
                         },
                       }}
                       gutterBottom
-                      // onMouseEnter={handleMouseEnter}
-                      // onMouseLeave={handleMouseLeave}
                     >
                       Download our company profile
                     </Typography>
@@ -345,55 +338,6 @@ export default function SpecialBH({
             </Box>
           </Grid>
         </Grid>
-      </Box>
-      <Box
-        sx={{
-          top: { md: "120px" },
-          right: { md: "0" },
-          position: { xs: "relative", md: "absolute" },
-          padding: { xs: "0", md: "0 50px" },
-          gap: { md: "10px" },
-        }}
-        display="flex"
-        flexDirection="column">
-        <CardMedia
-          sx={{
-            // visibility: showImage,
-            transition: "visibility 0.3s linear",
-            borderRadius: { xs: "0", md: "5px" },
-            aspectRatio: "16/9",
-            width: { md: "350px" },
-          }}
-          component="img"
-          image={image1}
-          alt={Alt}
-        />
-        <CardMedia
-          sx={{
-            // visibility: showImage,
-            transition: "visibility 0.2s linear",
-            borderRadius: { xs: "0", md: "5px" },
-            borderRadius: "5px",
-            aspectRatio: "16/9",
-            width: { md: "350px" },
-          }}
-          component="img"
-          image={image2}
-          alt={Alt}
-        />
-        <CardMedia
-          sx={{
-            // visibility: showImage,
-            transition: "visibility 0.2s linear",
-            borderRadius: { xs: "0", md: "5px" },
-            borderRadius: "5px",
-            aspectRatio: "16/9",
-            width: { md: "350px" },
-          }}
-          component="img"
-          image={image3}
-          alt={Alt}
-        />
       </Box>
       <Modal
         aria-labelledby="transition-modal-title"

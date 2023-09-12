@@ -1,6 +1,6 @@
 "use client";
-import React, { useState } from "react";
-import { Box } from "@mui/material";
+import React from "react";
+import { Box, CardMedia, Grid } from "@mui/material";
 import SpecialBH from "../component/specialBH";
 const SubData = {
   Logo: "/Logo/BJH-01.png",
@@ -35,13 +35,45 @@ export default function BHGroup() {
         mission={SubData.mission}
         pdfDownload={SubData.pdfDownload}
         bgHero={SubData.bgHero}
-        image1={SubData.image1}
-        image2={SubData.image2}
-        image3={SubData.image3}
         address={SubData.address}
         contact={SubData.contact}
         email={SubData.email}
       />
+      <Grid container justifyContent="center" sx={{ padding: "20px" }} spacing="10px">
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image1}
+            alt={SubData.Alt}
+          />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image2}
+            alt={SubData.Alt}
+          />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image3}
+            alt={SubData.Alt}
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 }

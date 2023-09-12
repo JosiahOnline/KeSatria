@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import {
-  Box,
+  Box, CardMedia, Grid,
 } from "@mui/material";
 import Subsidiaries from "../component/subsidiaries";
 const SubData = {
@@ -44,6 +44,41 @@ export default function GXGM() {
         contact={SubData.contact}
         email={SubData.email}
       />
+      <Grid container justifyContent="center" sx={{ padding: "20px" }} spacing="10px">
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image1}
+            alt={SubData.Alt}
+          />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image2}
+            alt={SubData.Alt}
+          />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image3}
+            alt={SubData.Alt}
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 }

@@ -360,55 +360,6 @@ export default function Subsidiaries({
           </Grid>
         </Grid>
       </Box>
-      <Box
-        sx={{
-          top: { md: "120px" },
-          right: { md: "0" },
-          position: { xs: "relative", md: "absolute" },
-          padding: { xs: "0", md: "0 50px" },
-          gap: { md: "10px" },
-        }}
-        display="flex"
-        flexDirection="column">
-        <CardMedia
-          sx={{
-            // visibility: showImage,
-            transition: "visibility 0.3s linear",
-            borderRadius: { xs: "0", md: "5px" },
-            aspectRatio: "16/9",
-            width: { md: "350px" },
-          }}
-          component="img"
-          image={image1}
-          alt={Alt}
-        />
-        <CardMedia
-          sx={{
-            // visibility: showImage,
-            transition: "visibility 0.2s linear",
-            borderRadius: { xs: "0", md: "5px" },
-            borderRadius: "5px",
-            aspectRatio: "16/9",
-            width: { md: "350px" },
-          }}
-          component="img"
-          image={image2}
-          alt={Alt}
-        />
-        <CardMedia
-          sx={{
-            // visibility: showImage,
-            transition: "visibility 0.2s linear",
-            borderRadius: { xs: "0", md: "5px" },
-            borderRadius: "5px",
-            aspectRatio: "16/9",
-            width: { md: "350px" },
-          }}
-          component="img"
-          image={image3}
-          alt={Alt}
-        />
-      </Box>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"

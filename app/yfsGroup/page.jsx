@@ -1,7 +1,7 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import {
-  Box,
+  Box, CardMedia, Grid,
 } from "@mui/material";
 import Subsidiaries from "../component/subsidiaries";
 const SubData = {
@@ -37,13 +37,45 @@ export default function YFSGroup() {
         mission={SubData.mission}
         pdfDownload={SubData.pdfDownload}
         bgHero={SubData.bgHero}
-        image1={SubData.image1}
-        image2={SubData.image2}
-        image3={SubData.image3}
         address={SubData.address}
         contact={SubData.contact}
         email={SubData.email}
       />
+      <Grid container justifyContent="center" sx={{ padding: "20px" }} spacing="10px">
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image1}
+            alt={SubData.Alt}
+          />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image2}
+            alt={SubData.Alt}
+          />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image3}
+            alt={SubData.Alt}
+          />
+        </Grid>
+      </Grid>
     </Box>
   );
 }

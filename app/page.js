@@ -148,6 +148,18 @@ export default function Home() {
             concentrated in the Palm Oil Industry with the total turnover of the
             company exceeding 50 Million Malaysian Ringgit (MYR) in a year.
           </Typography>
+          <Link href="/PDF/Kesatria Holding Company Profile-min.pdf">
+            <Typography
+              sx={{
+                color: "yellow",
+                marginTop:"5px",
+                fontSize: { xs: "1.3rem", md: "1.3rem" },
+                lineHeight: { xs: "1.8rem", md: "2rem" },
+                textDecoration:"underline",
+              }}>
+              Download Our PDF Profile
+            </Typography>
+          </Link>
         </Box>
       </Box>
       <Box
@@ -157,7 +169,7 @@ export default function Home() {
         }}>
         <Typography
           sx={{
-            color:"black",
+            color: "black",
             fontWeight: "bold",
             fontSize: { xs: "1.5rem", md: "2rem" },
             lineHeight: { xs: "1.8rem", md: "1.5rem" },
@@ -168,7 +180,7 @@ export default function Home() {
         </Typography>
         <Typography
           sx={{
-            color:"black",
+            color: "black",
             fontSize: { xs: "1.3rem", md: "1.3rem" },
             lineHeight: { xs: "1.8rem", md: "2rem" },
           }}>
@@ -365,7 +377,7 @@ export default function Home() {
         }}>
         <Typography
           sx={{
-            color:"black",
+            color: "black",
             fontWeight: "bold",
             fontSize: { xs: "1.5rem", md: "2rem" },
             lineHeight: { xs: "1.8rem", md: "1.5rem" },
@@ -377,7 +389,7 @@ export default function Home() {
         <Typography
           variant="h6"
           sx={{
-            color:"black",
+            color: "black",
             fontSize: { xs: "1.3rem", md: "1.3rem" },
             lineHeight: { xs: "1.8rem", md: "2rem" },
           }}>
@@ -428,14 +440,14 @@ export default function Home() {
                 borderRadius: "10px",
               }}>
               {/* <Link href="/yfsGroup"> */}
-                <CardMedia
-                  component="img"
-                  alt="VHL Fertilizer Sdn Bhd"
-                  height="272px"
-                  sx={{ objectFit: "contain" }}
-                  image="/Logo/VHLlogo-min.png"
-                />
-                {/* <CardContent>
+              <CardMedia
+                component="img"
+                alt="VHL Fertilizer Sdn Bhd"
+                height="272px"
+                sx={{ objectFit: "contain" }}
+                image="/Logo/VHLlogo-min.png"
+              />
+              {/* <CardContent>
                   <Typography
                     variant="h6"
                     align="center"
