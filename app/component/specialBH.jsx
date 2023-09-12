@@ -304,6 +304,8 @@ export default function SpecialBH({
                         width: { xs: "50px", md: "80px" },
                         borderRadius: "5px",
                       }}
+                      // onMouseEnter={handleMouseEnter}
+                      // onMouseLeave={handleMouseLeave}
                       component="img"
                       image="/PDFDL.jpeg"
                       alt="Download Our Company PDF"
@@ -329,6 +331,8 @@ export default function SpecialBH({
                         },
                       }}
                       gutterBottom
+                      // onMouseEnter={handleMouseEnter}
+                      // onMouseLeave={handleMouseLeave}
                     >
                       Download our company profile
                     </Typography>
@@ -381,8 +385,7 @@ export default function SpecialBH({
                 marginHeight="0"
                 marginWidth="0"
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Lintas%20Sibuga,%20Sibuga%20Industrial%20Centre,%20Lot%2070%20Sandakan+(Yun%20Fung%20Sang%20Group%20Sdn%20Bhd)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-            </Box>
+                src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Lintas%20Sibuga,%20Sibuga%20Industrial%20Centre,%20Lot%2070%20Sandakan+(Yun%20Fung%20Sang%20Group%20Sdn%20Bhd)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>            </Box>
             <Grid container justifyContent="center" alignItems="center">
               <Grid item xs={12} md={6}>
                 <Button

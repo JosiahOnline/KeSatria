@@ -12,7 +12,7 @@ const SubData = {
   mission:
     "Supporting the development of agriculture through the wholesale of fertilizer and agrochemical products to support agricultural activities for crop production on a fee or contract basis.",
   pdfDownload: "/PDF/Baja_Harapan_Group_Sdn_Bhd_Business_Profile_min.pdf",
-  bgHero: "/BHGroup/BHGroupHero-min.png",
+  bgHero: "/BHGroup/BHGroupHeroV1-min.png",
   image1: "/BHGroup/BHGroup1-min.png",
   image2: "/BHGroup/BHGroup2-min.png",
   image3: "/BHGroup/BHGroup3-min.png",
