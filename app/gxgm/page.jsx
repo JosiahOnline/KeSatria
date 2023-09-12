@@ -13,7 +13,7 @@ const SubData = {
     "To emerge as a global leader in international trade and related services, contributing significantly to the economic development and prosperity of the regions we operate in.",
   mission:
     "To be a catalyst for global trade, promote sustainable agriculture, and deliver reliable import and export services. We aspire to be the preferred partner for businesses seeking growth and success in the global marketplace.",
-  pdfDownload: "/PDF/GuangXiGuangMa International Trade Co.,Ltd._Company Profile-min.pdf",
+  pdfDownload: "/PDF/GuangXiGuangMa_International_Trade_Co_Ltd_Company_Profile_min.pdf",
   bgHero: "/GXGM/GXGMHero-min.png",
   image1: "/GXGM/GXGM1-min.png",
   image2: "/GXGM/GXGM2-min.png",

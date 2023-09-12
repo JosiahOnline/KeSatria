@@ -11,7 +11,7 @@ const SubData = {
     "To be a premier company with focus on positive contribution to economic development and agricultural growth of the country.",
   mission:
     "Supporting the development of agriculture through the wholesale of fertilizer and agrochemical products to support agricultural activities for crop production on a fee or contract basis.",
-  pdfDownload: "/PDF/Baja Harapan Group Sdn Bhd_Business Profile-min.pdf",
+  pdfDownload: "/PDF/Baja_Harapan_Group_Sdn_Bhd_Business_Profile_min.pdf",
   bgHero: "/BHGroup/BHGroupHero-min.png",
   image1: "/BHGroup/BHGroup1-min.png",
   image2: "/BHGroup/BHGroup2-min.png",

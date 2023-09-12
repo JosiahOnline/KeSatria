@@ -11,7 +11,7 @@ const SubData = {
     "To be a premier company with focus on positive contribution to economic development and agricultural growth of the country.",
   mission:
     "Supporting the development of agriculture through the wholesale of fertilizer and agrochemical products to support agricultural activities for crop production on a fee or contract basis.",
-  pdfDownload: "/PDF/Kang Ke Palm Sdn Bhd Profile-min.pdf",
+  pdfDownload: "/PDF/KangKePalm_Sdn_Bhd_Profile_min.pdf",
   bgHero: "/KKP/KKPHero-min.png",
   image1: "/KKP/KKP1-min.png",
   image2: "/KKP/KKP2-min.png",
@@ -84,7 +84,7 @@ export default function KKP() {
             lineHeight: { xs: "1.2rem", md: "2rem" },
           }}
           gutterBottom>
-          Our Area
+          ERRA WANGI ENTERPRISE
         </Typography>
         <iframe
           width="100%"

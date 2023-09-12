@@ -148,7 +148,7 @@ export default function Home() {
             concentrated in the Palm Oil Industry with the total turnover of the
             company exceeding 50 Million Malaysian Ringgit (MYR) in a year.
           </Typography>
-          <Link href="/PDF/Kesatria Holding Company Profile-min.pdf">
+          <Link href="/PDF/Kesatria_Holding_Company_Profile_min.pdf">
             <Typography
               sx={{
                 color: "yellow",

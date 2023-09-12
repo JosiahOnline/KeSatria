@@ -13,7 +13,7 @@ const SubData = {
     "To be a premier company with focus on positive contribution to economic development and agricultural growth of the country.",
   mission:
     "Supporting the development of agriculture through the wholesale of fertilizer and agrochemical products to support agricultural activities for crop production on a fee or contract basis.",
-  pdfDownload: "/PDF/YFS COMPANY PROFILE-min.pdf",
+  pdfDownload: "/PDF/YFS_COMPANY_PROFILE_min.pdf",
   bgHero: "/YFS/yfsHero.png",
   image1: "/YFS/YFS1.png",
   image2: "/YFS/YFS2.png",
