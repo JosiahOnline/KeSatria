@@ -13,9 +13,7 @@ import {
   Typography,
 } from "@mui/material";
 import Link from "next/link";
-import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const style = {
@@ -52,7 +50,7 @@ export default function Home() {
         justifyContent="space-between"
         alignItems="center"
         gap="10px">
-        <Link href="/" sx={{ width: "100%" }}>
+        <Link href="/">
           <Box
             display="flex"
             justifyContent="flex-start"
@@ -69,12 +67,12 @@ export default function Home() {
             />
             <Typography
               sx={{
-                fontSize: { xs: "0.9rem", md: "1.1rem" },
+                fontSize: { xs: "0.8rem", sm: "0.9rem", md: "1.1rem" },
                 color: "white",
                 fontWeight: "bold",
                 transition: "all 0.5s ease",
                 "&:hover": {
-                  fontSize: "1.2rem",
+                  fontSize: { md: "1.2rem" },
                 },
               }}>
               KESATRIA HOLDING
@@ -88,7 +86,7 @@ export default function Home() {
             fontWeight: "bold",
             border: "1px solid white",
             borderRadius: "5px",
-            fontSize: { xs: "0.7rem", md: "1rem" },
+            fontSize: { xs: "0.65rem", sm: "0.7rem", md: "1rem" },
             padding: "5px 10px",
             transition: "all 0.5s ease",
             "&:hover": {
@@ -115,15 +113,17 @@ export default function Home() {
         color="white"
         fontWeight="bold"
         sx={{
-          bottom: { xs: "10px", md: "60px" },
+          bottom: { xs: "0", md: "60px" },
           padding: { xs: "20px", md: "0 50px" },
         }}>
         <Typography
           fontWeight="bold"
           sx={{
+            color: "white",
+            marginTop: { xs: "50px" },
             fontSize: { xs: "3rem", md: "4rem" },
-            lineHeight: { xs: "3rem", md: "4rem" },
-            paddingLeft: { xs: "10px", md: "20px" },
+            lineHeight: { xs: "3rem", sm: "3rem", md: "4rem" },
+            paddingLeft: { xs: "10px", sm: "10px", md: "20px" },
             textShadow:
               "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
           }}
@@ -139,8 +139,8 @@ export default function Home() {
           <Typography
             variant="h6"
             sx={{
-              fontSize: { xs: "1.3rem", md: "1.3rem" },
-              lineHeight: { xs: "1.8rem", md: "2rem" },
+              fontSize: { xs: "1.2rem", sm: "1.3rem", md: "1.5rem" },
+              lineHeight: { xs: "1.6rem", sm: "1.8rem", md: "2rem" },
             }}>
             Kesatria Holding Sdn Bhd is a private limited company that has
             several subsidiaries operating for over 20 years based in Sabah,
@@ -151,11 +151,11 @@ export default function Home() {
           <Link href="/PDF/Kesatria_Holding_Company_Profile_min.pdf">
             <Typography
               sx={{
-                color: "yellow",
-                marginTop:"5px",
-                fontSize: { xs: "1.3rem", md: "1.3rem" },
-                lineHeight: { xs: "1.8rem", md: "2rem" },
-                textDecoration:"underline",
+                color: "#E2B470",
+                marginTop: "5px",
+                fontSize: { xs: "1.1rem", sm: "1.3rem", md: "1.5rem" },
+                lineHeight: { xs: "1.5rem", sm: "1.8rem", md: "2rem" },
+                textDecoration: "underline",
               }}>
               Download Our Company Profile
             </Typography>
@@ -171,18 +171,18 @@ export default function Home() {
           sx={{
             color: "black",
             fontWeight: "bold",
-            fontSize: { xs: "1.5rem", md: "2rem" },
-            lineHeight: { xs: "1.8rem", md: "1.5rem" },
+            fontSize: { xs: "1.3rem", sm: "1.5rem", md: "2rem" },
+            lineHeight: { xs: "1.6rem", sm: "1.8rem", md: "2rem" },
             marginTop: { xs: "25px", md: "20px" },
-            marginBottom: "15px",
+            marginBottom: {xs:"5px", sm:"10px"},
           }}>
           Meet Our Subsidiaries
         </Typography>
         <Typography
           sx={{
             color: "black",
-            fontSize: { xs: "1.3rem", md: "1.3rem" },
-            lineHeight: { xs: "1.8rem", md: "2rem" },
+            fontSize: { xs: "1.1rem", sm: "1.3rem", md: "1.5rem" },
+            lineHeight: { xs: "1.5rem", sm: "1.8rem", md: "2rem" },
           }}>
           Kesatria Holding together with its subsidiaries will hold several more
           collaborations with higher education centers for agricultural research
@@ -379,8 +379,8 @@ export default function Home() {
           sx={{
             color: "black",
             fontWeight: "bold",
-            fontSize: { xs: "1.5rem", md: "2rem" },
-            lineHeight: { xs: "1.8rem", md: "1.5rem" },
+            fontSize: { xs: "1.3rem", sm: "1.5rem", md: "2rem" },
+            lineHeight: { xs: "1.6rem", sm: "1.8rem", md: "2rem" },
             marginTop: { xs: "25px", md: "20px" },
             marginBottom: "15px",
           }}>
@@ -390,8 +390,8 @@ export default function Home() {
           variant="h6"
           sx={{
             color: "black",
-            fontSize: { xs: "1.3rem", md: "1.3rem" },
-            lineHeight: { xs: "1.8rem", md: "2rem" },
+            fontSize: { xs: "1.1rem", sm: "1.3rem", md: "1.5rem" },
+            lineHeight: { xs: "1.5rem", sm: "1.8rem", md: "2rem" },
           }}>
           Kesatria Holding is always open for any opportunity of comprehensive
           collaboration to achieve a win-win situation of environmental and

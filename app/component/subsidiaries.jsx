@@ -36,9 +36,6 @@ export default function Subsidiaries({
   mission,
   pdfDownload,
   bgHero,
-  image1,
-  image2,
-  image3,
   address,
   contact,
   email,
@@ -46,22 +43,6 @@ export default function Subsidiaries({
   const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
-  // const [boxOpacity, setBoxOpacity] = useState(0.1);
-  // const [fontColor, setFontColor] = useState("#3B4A41");
-  // const [fontOpacity, setFontOpacity] = useState(1);
-  // const [showImage, setShowImage] = useState("visible");
-  // const handleMouseEnter = () => {
-  //   setBoxOpacity(0);
-  //   setFontColor("white");
-  //   setFontOpacity(0);
-  //   setShowImage("hidden");
-  // };
-  // const handleMouseLeave = () => {
-  //   setBoxOpacity(0.8);
-  //   setFontColor("#3B4A41");
-  //   setFontOpacity(1);
-  //   setShowImage("visible");
-  // };
   return (
     <Box>
       <Box
@@ -77,7 +58,7 @@ export default function Subsidiaries({
         justifyContent="space-between"
         alignItems="center"
         gap="10px">
-        <Link href="/" sx={{ width: "100%" }}>
+        <Link href="/">
           <Box
             display="flex"
             justifyContent="flex-start"
@@ -94,12 +75,12 @@ export default function Subsidiaries({
             />
             <Typography
               sx={{
-                fontSize: { xs: "0.9rem", md: "1.1rem" },
+                fontSize: { xs: "0.8rem", sm:"0.9rem", md: "1.1rem" },
                 color: "white",
                 fontWeight: "bold",
                 transition: "all 0.5s ease",
                 "&:hover": {
-                  fontSize: "1.2rem",
+                  fontSize: {md: "1.2rem"},
                 },
               }}>
               KESATRIA HOLDING
@@ -113,7 +94,7 @@ export default function Subsidiaries({
             fontWeight: "bold",
             border: "1px solid white",
             borderRadius: "5px",
-            fontSize: { xs: "0.7rem", md: "1rem" },
+            fontSize: { xs: "0.65rem", sm:"0.7rem", md: "1rem" },
             padding: "5px 10px",
             transition: "all 0.5s ease",
             "&:hover": {
@@ -148,8 +129,8 @@ export default function Subsidiaries({
       <Box
         position="absolute"
         sx={{
-          top: { xs: "15%", md: "15%" },
-          padding: { xs: "0 20px", md: "0 50px" },
+          top: { xs: "12%",sm:"14%", md: "20%" },
+          padding: { xs: "0 20px", sm:"0 30px",md: "0 30px" },
         }}>
         <Grid
           container
@@ -172,11 +153,10 @@ export default function Subsidiaries({
               fontWeight="bold"
               sx={{
                 position: { md: "absolute" },
-                top: { md: "2%" },
-                // width: "100%",
-                left: { md: "11%" },
-                fontSize: { xs: "2rem", md: "3rem" },
-                lineHeight: { xs: "2rem", md: "3rem" },
+                top: { md: "1%", lg:"2%" },
+                left: { md: "16%", lg:"11%" },
+                fontSize: { xs: "1.5rem", sm:"2rem",md: "2.5rem" },
+                lineHeight: { xs: "1.8rem", sm: "2rem", md: "3rem" },
                 color: "white",
                 transition: "font-color 0.5s",
                 textShadow:
@@ -190,13 +170,12 @@ export default function Subsidiaries({
               fontWeight="bold"
               sx={{
                 position: { md: "absolute" },
-                top: { md: "10%" },
-                width: "100%",
-                left: { md: "11%" },
+                top: { md:"14%", lg: "15%" },
+                left: { md: "16%", lg:"11%" },
                 paddingTop: { xs: "10px", md: "0" },
                 textAlign: { xs: "left", md: "left" },
-                fontSize: { xs: "0.85rem", md: "1.2rem" },
-                lineHeight: { xs: "1.2rem", md: "2rem" },
+                fontSize: { xs: "0.9rem", sm:"0.95rem", md: "1.2rem"  },
+                lineHeight: { xs: "1.2rem", sm: "1.3rem", md: "2rem" },
                 paddingLeft: { md: "5px" },
                 color: "white",
                 transition: "font-color 0.5s",
@@ -218,16 +197,15 @@ export default function Subsidiaries({
             marginTop: { sx: "15px", md: "30px" },
             paddingLeft: { md: "15px" },
           }}>
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} sm={8} md={12}>
             <Typography
               fontWeight="bold"
               sx={{
-                // opacity: fontOpacity,
                 // color: "#3B4A41",
                 color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "15px", md: "0" },
-                fontSize: { xs: "1.2rem", md: "1.5rem" },
+                fontSize: { xs: "1.2rem", md: "1.5rem"  },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
                 textShadow:
                   "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
@@ -236,11 +214,9 @@ export default function Subsidiaries({
             </Typography>
             <Typography
               sx={{
-                // opacity: fontOpacity,
                 color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "10px", md: "0" },
-                marginBottom: { xs: "15px", md: "0" },
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
                 textShadow:
@@ -249,15 +225,14 @@ export default function Subsidiaries({
               {vision}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} sm={8} md={12}>
             <Typography
               fontWeight="bold"
               sx={{
-                // opacity: fontOpacity,
                 color: "white",
                 transition: "opacity 1s",
-                marginTop: { xs: "10px", md: "15px" },
-                fontSize: { xs: "1.2rem", md: "1.5rem" },
+                marginTop: { xs: "15px", md: "0" },
+                fontSize: { xs: "1.2rem", md: "1.5rem"  },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
                 textShadow:
                   "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
@@ -266,11 +241,9 @@ export default function Subsidiaries({
             </Typography>
             <Typography
               sx={{
-                // opacity: fontOpacity,
                 color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "10px", md: "0" },
-                marginBottom: { xs: "15px", md: "0" },
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
                 textShadow:
@@ -279,11 +252,17 @@ export default function Subsidiaries({
               {mission}
             </Typography>
           </Grid>
-          <Grid item xs={12}>
+        </Grid>
+      </Box>
+      <Box position="absolute"
+        sx={{
+          width:{xs:"100%", sm:"unset"},
+          bottom: { xs: "50px",sm:"30px", md: "30px" },
+          padding: { xs: "0 20px", md: "0 50px" },
+        }}>
             <Typography
               fontWeight="bold"
               sx={{
-                // opacity: fontOpacity,
                 color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "10px", md: "15px" },
@@ -297,8 +276,7 @@ export default function Subsidiaries({
             </Typography>
             <Box
               sx={{
-                width: { xs: "100%", md: "20%" },
-                marginTop: { xs: "15px", md: "0" },
+                marginTop: { xs: "10px", md: "0" },
               }}
               backgroundColor="whitesmoke"
               borderRadius="5px">
@@ -311,18 +289,16 @@ export default function Subsidiaries({
                 }}>
                 <Box
                   sx={{
-                    height: { md: "140px" },
-                    padding: { xs: "10px", md: "20px 10px 20px 20px" },
+                    height: { md: "100px",},
+                    padding: { xs: "10px", md:"10px 15px"},
                   }}>
                   <Link href={pdfDownload}>
                     <CardMedia
                       sx={{
-                        height: { xs: "65px", md: "100px" },
-                        width: { xs: "50px", md: "80px" },
+                        height: { xs: "65px", md:"80px", lg: "80px" },
+                        width: { xs: "50px", md:"60px", lg: "60px" },
                         borderRadius: "5px",
                       }}
-                      // onMouseEnter={handleMouseEnter}
-                      // onMouseLeave={handleMouseLeave}
                       component="img"
                       image="/PDFDL.jpeg"
                       alt="Download Our Company PDF"
@@ -331,25 +307,23 @@ export default function Subsidiaries({
                 </Box>
                 <Box
                   sx={{
+                    height: { md: "100px", },
                     padding: "20px 30px 20px 10px",
-                    height: { md: "140px" },
                   }}>
                   <Link href={pdfDownload}>
                     <Typography
                       variant="h6"
                       color="black"
                       sx={{
-                        width: { xs: "200px", md: "80px" },
-                        fontSize: { xs: "1rem", md: "1.3rem" },
-                        lineHeight: { xs: "1.2rem", md: "1.5rem" },
+                        width: { xs: "150px", sm:"150px", md:"180px",lg: "180px" },
+                        fontSize: { xs: "1.1rem", md: "1.4rem" },
+                        lineHeight: { xs: "1.2rem", md: "1.8rem" },
                         textAlign: "left",
                         "&:hover": {
                           color: "red",
                         },
                       }}
                       gutterBottom
-                      // onMouseEnter={handleMouseEnter}
-                      // onMouseLeave={handleMouseLeave}
                     >
                       Download our company profile
                     </Typography>
@@ -357,9 +331,7 @@ export default function Subsidiaries({
                 </Box>
               </Box>
             </Box>
-          </Grid>
-        </Grid>
-      </Box>
+          </Box>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
