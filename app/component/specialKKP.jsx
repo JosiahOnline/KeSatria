@@ -58,7 +58,7 @@ export default function SpecialKKP({
         justifyContent="space-between"
         alignItems="center"
         gap="10px">
-        <Link href="/" sx={{ width: "100%" }}>
+        <Link href="/">
           <Box
             display="flex"
             justifyContent="flex-start"
@@ -75,7 +75,7 @@ export default function SpecialKKP({
             />
             <Typography
               sx={{
-                fontSize: { xs: "0.9rem", md: "1.1rem" },
+                fontSize: { xs: "0.8rem", sm: "0.9rem", md: "1.1rem" },
                 color: "white",
                 fontWeight: "bold",
                 transition: "all 0.5s ease",
@@ -94,7 +94,7 @@ export default function SpecialKKP({
             fontWeight: "bold",
             border: "1px solid white",
             borderRadius: "5px",
-            fontSize: { xs: "0.7rem", md: "1rem" },
+            fontSize: { xs: "0.65rem", sm: "0.7rem", md: "1rem" },
             padding: "5px 10px",
             transition: "all 0.5s ease",
             "&:hover": {
@@ -129,8 +129,8 @@ export default function SpecialKKP({
       <Box
         position="absolute"
         sx={{
-          top: { xs: "15%", md: "15%" },
-          padding: { xs: "0 20px", md: "0 50px" },
+          top: { xs: "12%", sm: "14%", md: "20%" },
+          padding: { xs: "0 20px", sm: "0 30px", md: "0 30px" },
         }}>
         <Grid
           container
@@ -156,10 +156,9 @@ export default function SpecialKKP({
               sx={{
                 position: { md: "absolute" },
                 top: { md: "2%" },
-                // width: "100%",
                 left: { md: "22.5%" },
-                fontSize: { xs: "1.8rem", md: "3rem" },
-                lineHeight: { xs: "2rem", md: "3rem" },
+                fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" },
+                lineHeight: { xs: "1.8rem", sm: "2rem", md: "3rem" },
                 color: "white",
                 transition: "font-color 0.5s",
                 textShadow:
@@ -174,12 +173,11 @@ export default function SpecialKKP({
               sx={{
                 position: { md: "absolute" },
                 top: { md: "10%" },
-                width: "100%",
                 left: { md: "22.5%" },
                 paddingTop: { xs: "10px", md: "0" },
                 textAlign: { xs: "left", md: "left" },
-                fontSize: { xs: "0.85rem", md: "1.2rem" },
-                lineHeight: { xs: "1.2rem", md: "2rem" },
+                fontSize: { xs: "0.9rem", sm: "0.95rem", md: "1.2rem" },
+                lineHeight: { xs: "1.2rem", sm: "1.3rem", md: "2rem" },
                 paddingLeft: { md: "5px" },
                 color: "white",
                 transition: "font-color 0.5s",
@@ -198,18 +196,16 @@ export default function SpecialKKP({
           alignContent="center"
           spacing={1}
           sx={{
-            marginTop: { sx: "15px", md: "15px" },
+            marginTop: { sx: "15px", md: "0px", lg:"20px" },
             paddingLeft: { md: "15px" },
           }}>
-          <Grid item xs={12} md={9}>
+          <Grid item xs={12} sm={9} md={12}>
             <Typography
               fontWeight="bold"
               sx={{
-                // opacity: fontOpacity,
-                // color: "#3B4A41",
                 color: "white",
                 transition: "opacity 1s",
-                marginTop: { xs: "15px", md: "0" },
+                marginTop: { xs: "15px", md: "0px" },
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
                 textShadow:
@@ -232,14 +228,13 @@ export default function SpecialKKP({
               {vision}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={9}>
+          <Grid item xs={12} sm={9} md={12}>
             <Typography
               fontWeight="bold"
               sx={{
-                // opacity: fontOpacity,
                 color: "white",
                 transition: "opacity 1s",
-                marginTop: { xs: "10px", md: "15px" },
+                marginTop: { xs: "15px", md: "0", lg:"20px" },
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
                 textShadow:
@@ -249,7 +244,6 @@ export default function SpecialKKP({
             </Typography>
             <Typography
               sx={{
-                // opacity: fontOpacity,
                 color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "10px", md: "0" },
@@ -262,11 +256,18 @@ export default function SpecialKKP({
               {mission}
             </Typography>
           </Grid>
-          <Grid item xs={12}>
+          <Grid
+            item
+            xs={12}
+            sm={5}
+            md={5.5}
+            lg={3.2}
+            sx={{
+              padding: { xs: "0 20px", md: "0 50px" },
+            }}>
             <Typography
               fontWeight="bold"
               sx={{
-                // opacity: fontOpacity,
                 color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "10px", md: "15px" },
@@ -280,8 +281,7 @@ export default function SpecialKKP({
             </Typography>
             <Box
               sx={{
-                width: { xs: "100%", md: "20%" },
-                marginTop: { xs: "15px", md: "0" },
+                marginTop: { xs: "10px", md: "0" },
               }}
               backgroundColor="whitesmoke"
               borderRadius="5px">
@@ -294,18 +294,16 @@ export default function SpecialKKP({
                 }}>
                 <Box
                   sx={{
-                    height: { md: "140px" },
-                    padding: { xs: "10px", md: "20px 10px 20px 20px" },
+                    height: { md: "100px" },
+                    padding: { xs: "10px", md: "10px 15px" },
                   }}>
                   <Link href={pdfDownload}>
                     <CardMedia
                       sx={{
-                        height: { xs: "65px", md: "100px" },
-                        width: { xs: "50px", md: "80px" },
+                        height: { xs: "65px", md: "80px", lg: "80px" },
+                        width: { xs: "50px", md: "60px", lg: "60px" },
                         borderRadius: "5px",
                       }}
-                      // onMouseEnter={handleMouseEnter}
-                      // onMouseLeave={handleMouseLeave}
                       component="img"
                       image="/PDFDL.jpeg"
                       alt="Download Our Company PDF"
@@ -314,26 +312,28 @@ export default function SpecialKKP({
                 </Box>
                 <Box
                   sx={{
+                    height: { md: "100px" },
                     padding: "20px 30px 20px 10px",
-                    height: { md: "140px" },
                   }}>
                   <Link href={pdfDownload}>
                     <Typography
                       variant="h6"
                       color="black"
                       sx={{
-                        width: { xs: "200px", md: "80px" },
-                        fontSize: { xs: "1rem", md: "1.3rem" },
-                        lineHeight: { xs: "1.2rem", md: "1.5rem" },
+                        width: {
+                          xs: "150px",
+                          sm: "150px",
+                          md: "180px",
+                          lg: "180px",
+                        },
+                        fontSize: { xs: "1.1rem", md: "1.4rem" },
+                        lineHeight: { xs: "1.2rem", md: "1.8rem" },
                         textAlign: "left",
                         "&:hover": {
                           color: "red",
                         },
                       }}
-                      gutterBottom
-                      // onMouseEnter={handleMouseEnter}
-                      // onMouseLeave={handleMouseLeave}
-                    >
+                      gutterBottom>
                       Download our company profile
                     </Typography>
                   </Link>

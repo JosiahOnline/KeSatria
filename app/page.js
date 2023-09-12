@@ -199,7 +199,7 @@ export default function Home() {
           alignItems="center"
           alignContent="center"
           spacing={2}>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -226,7 +226,7 @@ export default function Home() {
               </Link>
             </Card>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -253,7 +253,7 @@ export default function Home() {
               </Link>
             </Card>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -280,7 +280,7 @@ export default function Home() {
               </Link>
             </Card>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -307,7 +307,7 @@ export default function Home() {
               </Link>
             </Card>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -405,7 +405,7 @@ export default function Home() {
           alignItems="center"
           alignContent="center"
           spacing={2}>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
@@ -432,7 +432,7 @@ export default function Home() {
               </Link>
             </Card>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} sm={4} md={4}>
             <Card
               sx={{
                 maxWidth: 350,

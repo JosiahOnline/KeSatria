@@ -75,12 +75,12 @@ export default function Subsidiaries({
             />
             <Typography
               sx={{
-                fontSize: { xs: "0.8rem", sm:"0.9rem", md: "1.1rem" },
+                fontSize: { xs: "0.8rem", sm: "0.9rem", md: "1.1rem" },
                 color: "white",
                 fontWeight: "bold",
                 transition: "all 0.5s ease",
                 "&:hover": {
-                  fontSize: {md: "1.2rem"},
+                  fontSize: { md: "1.2rem" },
                 },
               }}>
               KESATRIA HOLDING
@@ -94,7 +94,7 @@ export default function Subsidiaries({
             fontWeight: "bold",
             border: "1px solid white",
             borderRadius: "5px",
-            fontSize: { xs: "0.65rem", sm:"0.7rem", md: "1rem" },
+            fontSize: { xs: "0.65rem", sm: "0.7rem", md: "1rem" },
             padding: "5px 10px",
             transition: "all 0.5s ease",
             "&:hover": {
@@ -129,8 +129,8 @@ export default function Subsidiaries({
       <Box
         position="absolute"
         sx={{
-          top: { xs: "12%",sm:"14%", md: "20%" },
-          padding: { xs: "0 20px", sm:"0 30px",md: "0 30px" },
+          top: { xs: "12%", sm: "14%", md: "20%" },
+          padding: { xs: "0 20px", sm: "0 30px", md: "0 30px" },
         }}>
         <Grid
           container
@@ -153,9 +153,9 @@ export default function Subsidiaries({
               fontWeight="bold"
               sx={{
                 position: { md: "absolute" },
-                top: { md: "1%", lg:"2%" },
-                left: { md: "16%", lg:"11%" },
-                fontSize: { xs: "1.5rem", sm:"2rem",md: "2.5rem" },
+                top: { md: "1%", lg: "2%" },
+                left: { md: "16%", lg: "11%" },
+                fontSize: { xs: "1.5rem", sm: "2rem", md: "2.5rem" },
                 lineHeight: { xs: "1.8rem", sm: "2rem", md: "3rem" },
                 color: "white",
                 transition: "font-color 0.5s",
@@ -170,11 +170,11 @@ export default function Subsidiaries({
               fontWeight="bold"
               sx={{
                 position: { md: "absolute" },
-                top: { md:"14%", lg: "15%" },
-                left: { md: "16%", lg:"11%" },
+                top: { md: "14%", lg: "15%" },
+                left: { md: "16%", lg: "11%" },
                 paddingTop: { xs: "10px", md: "0" },
                 textAlign: { xs: "left", md: "left" },
-                fontSize: { xs: "0.9rem", sm:"0.95rem", md: "1.2rem"  },
+                fontSize: { xs: "0.9rem", sm: "0.95rem", md: "1.2rem" },
                 lineHeight: { xs: "1.2rem", sm: "1.3rem", md: "2rem" },
                 paddingLeft: { md: "5px" },
                 color: "white",
@@ -205,7 +205,7 @@ export default function Subsidiaries({
                 color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "15px", md: "0" },
-                fontSize: { xs: "1.2rem", md: "1.5rem"  },
+                fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
                 textShadow:
                   "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
@@ -232,7 +232,7 @@ export default function Subsidiaries({
                 color: "white",
                 transition: "opacity 1s",
                 marginTop: { xs: "15px", md: "0" },
-                fontSize: { xs: "1.2rem", md: "1.5rem"  },
+                fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
                 textShadow:
                   "2px 3px 5px rgba(0,0,0,0.3), 0px -4px 10px rgba(255,255,255,0.3)",
@@ -252,14 +252,15 @@ export default function Subsidiaries({
               {mission}
             </Typography>
           </Grid>
-        </Grid>
-      </Box>
-      <Box position="absolute"
-        sx={{
-          width:{xs:"100%", sm:"unset"},
-          bottom: { xs: "50px",sm:"30px", md: "30px" },
-          padding: { xs: "0 20px", md: "0 50px" },
-        }}>
+          <Grid
+            item
+            xs={12}
+            sm={5}
+            md={5.5}
+            lg={3.2}
+            sx={{
+              padding: { xs: "0 20px", md: "0 50px" },
+            }}>
             <Typography
               fontWeight="bold"
               sx={{
@@ -289,14 +290,14 @@ export default function Subsidiaries({
                 }}>
                 <Box
                   sx={{
-                    height: { md: "100px",},
-                    padding: { xs: "10px", md:"10px 15px"},
+                    height: { md: "100px" },
+                    padding: { xs: "10px", md: "10px 15px" },
                   }}>
                   <Link href={pdfDownload}>
                     <CardMedia
                       sx={{
-                        height: { xs: "65px", md:"80px", lg: "80px" },
-                        width: { xs: "50px", md:"60px", lg: "60px" },
+                        height: { xs: "65px", md: "80px", lg: "80px" },
+                        width: { xs: "50px", md: "60px", lg: "60px" },
                         borderRadius: "5px",
                       }}
                       component="img"
@@ -307,7 +308,7 @@ export default function Subsidiaries({
                 </Box>
                 <Box
                   sx={{
-                    height: { md: "100px", },
+                    height: { md: "100px" },
                     padding: "20px 30px 20px 10px",
                   }}>
                   <Link href={pdfDownload}>
@@ -315,7 +316,12 @@ export default function Subsidiaries({
                       variant="h6"
                       color="black"
                       sx={{
-                        width: { xs: "150px", sm:"150px", md:"180px",lg: "180px" },
+                        width: {
+                          xs: "150px",
+                          sm: "150px",
+                          md: "180px",
+                          lg: "180px",
+                        },
                         fontSize: { xs: "1.1rem", md: "1.4rem" },
                         lineHeight: { xs: "1.2rem", md: "1.8rem" },
                         textAlign: "left",
@@ -323,15 +329,16 @@ export default function Subsidiaries({
                           color: "red",
                         },
                       }}
-                      gutterBottom
-                    >
+                      gutterBottom>
                       Download our company profile
                     </Typography>
                   </Link>
                 </Box>
               </Box>
             </Box>
-          </Box>
+          </Grid>
+        </Grid>
+      </Box>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
