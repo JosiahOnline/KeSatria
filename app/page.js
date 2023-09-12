@@ -157,7 +157,7 @@ export default function Home() {
                 lineHeight: { xs: "1.8rem", md: "2rem" },
                 textDecoration:"underline",
               }}>
-              Download Our PDF Profile
+              Download Our Company Profile
             </Typography>
           </Link>
         </Box>
