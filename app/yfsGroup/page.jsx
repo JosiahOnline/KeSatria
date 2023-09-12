@@ -18,6 +18,7 @@ const SubData = {
   image1: "/YFS/YFS1.png",
   image2: "/YFS/YFS2.png",
   image3: "/YFS/YFS3.png",
+  image4: "/YFS/YFS4.png",
   address:
     "LOT 70 & 71, SIBUGA INDUSTRIAL CENTRE, JALAN LINTAS SIBUGA, 90000 SANDAKAN, SABAH",
   contact:
@@ -42,7 +43,7 @@ export default function YFSGroup() {
         email={SubData.email}
       />
       <Grid container justifyContent="center" sx={{ padding: "20px" }} spacing="10px">
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={6}>
           <CardMedia
             sx={{
               borderRadius: "5px",
@@ -53,7 +54,7 @@ export default function YFSGroup() {
             alt={SubData.Alt}
           />
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={6}>
           <CardMedia
             sx={{
               borderRadius: "5px",
@@ -64,7 +65,7 @@ export default function YFSGroup() {
             alt={SubData.Alt}
           />
         </Grid>
-        <Grid item xs={12} md={4}>
+        <Grid item xs={12} md={6}>
           <CardMedia
             sx={{
               borderRadius: "5px",
@@ -72,6 +73,17 @@ export default function YFSGroup() {
             }}
             component="img"
             image={SubData.image3}
+            alt={SubData.Alt}
+          />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image4}
             alt={SubData.Alt}
           />
         </Grid>

@@ -18,6 +18,8 @@ const SubData = {
   image1: "/FH/FH1-min.png",
   image2: "/FH/FH2-min.png",
   image3: "/FH/FH3-min.png",
+  image4: "/FH/FH4-min.png",
+  image5: "/FH/FH5-min.png",
   address:
     "LOT 70 & 71, SIBUGA INDUSTRIAL CENTRE, JALAN LINTAS SIBUGA, 90000 SANDAKAN, SABAH",
   contact:
@@ -72,6 +74,28 @@ export default function FutureHome() {
             }}
             component="img"
             image={SubData.image3}
+            alt={SubData.Alt}
+          />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image4}
+            alt={SubData.Alt}
+          />
+        </Grid>
+        <Grid item xs={12} md={6}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image5}
             alt={SubData.Alt}
           />
         </Grid>
