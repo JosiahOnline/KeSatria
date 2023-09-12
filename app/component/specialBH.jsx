@@ -138,16 +138,16 @@ export default function SpecialBH({
           justifyContent="flex-start"
           alignItems="flex-start"
           alignContent="flex-start">
-          <Grid item xs={12} md={3}>
+          <Grid item xs={9} md={3}>
             <CardMedia
               component="img"
               image={Logo}
               alt={Alt}
               sx={{
                 objectFit: "cover",
-                height: { xs: "130px", md: "150px" },
+                height: { xs: "100px", md: "130px" },
                 backgroundPosition: "left",
-                marginLeft: { xs: "-20%", md: "-15%" },
+                marginLeft: { xs: "-14%", md: "-10%" },
                 marginBottom: "15px",
               }}
             />
@@ -157,7 +157,7 @@ export default function SpecialBH({
                 position: { md: "absolute" },
                 top: { md: "3%" },
                 // width: "100%",
-                left: { md: "20.5%" },
+                left: { md: "22.5%" },
                 fontSize: { xs: "1.8rem", md: "3rem" },
                 lineHeight: { xs: "2rem", md: "3rem" },
                 color: "white",
@@ -168,14 +168,14 @@ export default function SpecialBH({
               {company}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} >
             <Typography
               fontWeight="bold"
               sx={{
                 position: { md: "absolute" },
                 top: { md: "12%" },
                 width: "100%",
-                left: { md: "20.5%" },
+                left: { md: "22.5%" },
                 paddingTop: { xs: "10px", md: "0" },
                 textAlign: { xs: "left", md: "left" },
                 fontSize: { xs: "0.85rem", md: "1.2rem" },
@@ -201,7 +201,7 @@ export default function SpecialBH({
             marginTop: { sx: "15px", md: "15px" },
             paddingLeft: { md: "15px" },
           }}>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={9}>
             <Typography
               fontWeight="bold"
               sx={{
@@ -232,7 +232,7 @@ export default function SpecialBH({
               {vision}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={5.5}>
+          <Grid item xs={12} md={9}>
             <Typography
               fontWeight="bold"
               sx={{

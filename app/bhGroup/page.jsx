@@ -3,7 +3,7 @@ import React from "react";
 import { Box, CardMedia, Grid } from "@mui/material";
 import SpecialBH from "../component/specialBH";
 const SubData = {
-  Logo: "/Logo/BJH-01.png",
+  Logo: "/Logo/BJHLogo2.png",
   Alt: "Baja Harapan Group",
   company: "Baja Harapan Group",
   description: "WHOSALE OF FERTILIZER OF AGROCHEMICAL PRODUCT",

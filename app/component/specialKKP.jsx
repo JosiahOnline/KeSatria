@@ -168,7 +168,7 @@ export default function SpecialKKP({
               {company}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} >
             <Typography
               fontWeight="bold"
               sx={{
@@ -201,7 +201,7 @@ export default function SpecialKKP({
             marginTop: { sx: "15px", md: "15px" },
             paddingLeft: { md: "15px" },
           }}>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} md={9}>
             <Typography
               fontWeight="bold"
               sx={{
@@ -232,7 +232,7 @@ export default function SpecialKKP({
               {vision}
             </Typography>
           </Grid>
-          <Grid item xs={12} md={5.5}>
+          <Grid item xs={12} md={9}>
             <Typography
               fontWeight="bold"
               sx={{
