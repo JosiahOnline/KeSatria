@@ -27,7 +27,7 @@ const style = {
   p: { xs: 3, md: 4 },
 };
 
-export default function Subsidiaries({
+export default function SpecialBH({
   Logo,
   Alt,
   company,
@@ -148,9 +148,9 @@ export default function Subsidiaries({
               alt={Alt}
               sx={{
                 objectFit: "cover",
-                height: { xs: "100px", md: "100px" },
+                height: { xs: "130px", md: "150px" },
                 backgroundPosition: "left",
-                marginLeft: { xs: "-13%", md: "-10%" },
+                marginLeft: { xs: "-20%", md: "-15%" },
                 marginBottom: "15px",
               }}
             />
@@ -158,9 +158,9 @@ export default function Subsidiaries({
               fontWeight="bold"
               sx={{
                 position: { md: "absolute" },
-                top: { md: "2%" },
+                top: { md: "3%" },
                 // width: "100%",
-                left: { md: "22.5%" },
+                left: { md: "20.5%" },
                 fontSize: { xs: "1.8rem", md: "3rem" },
                 lineHeight: { xs: "2rem", md: "3rem" },
                 color: "white",
@@ -176,9 +176,9 @@ export default function Subsidiaries({
               fontWeight="bold"
               sx={{
                 position: { md: "absolute" },
-                top: { md: "10%" },
+                top: { md: "12%" },
                 width: "100%",
-                left: { md: "22.5%" },
+                left: { md: "20.5%" },
                 paddingTop: { xs: "10px", md: "0" },
                 textAlign: { xs: "left", md: "left" },
                 fontSize: { xs: "0.85rem", md: "1.2rem" },

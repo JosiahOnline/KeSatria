@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
-import {
-  Box,
-} from "@mui/material";
+import { Box, CardMedia, Grid, Typography } from "@mui/material";
 import SpecialKKP from "../component/specialKKP";
 const SubData = {
   Logo: "/Logo/KKPLogo1-min.png",
@@ -18,7 +16,8 @@ const SubData = {
   image1: "/KKP/KKP1-min.png",
   image2: "/KKP/KKP2-min.png",
   image3: "/KKP/KKP3-min.png",
-  address: "Kinabatangan, Sabah",  
+  address:
+    "LOT 69, 70 & 71, SIBUGA INDUSTRIAL CENTRE, JALAN LINTAS SIBUGA, 90000 SANDAKAN, SABAH",
   contact:
     "https://wa.me/60108818233?text=Hi,%20I%20want%20to%20know%20more%20about%20Kang%20Ke%20Palm%20Sdn%20Bhd!",
   email: "mailto:financekangkepalmsdnbhd@gmail.com",
@@ -36,13 +35,66 @@ export default function KKP() {
         mission={SubData.mission}
         pdfDownload={SubData.pdfDownload}
         bgHero={SubData.bgHero}
-        image1={SubData.image1}
-        image2={SubData.image2}
-        image3={SubData.image3}
         address={SubData.address}
         contact={SubData.contact}
         email={SubData.email}
       />
+      <Grid container justifyContent="center" sx={{ padding: "20px" }} spacing="10px">
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image1}
+            alt={SubData.Alt}
+          />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image2}
+            alt={SubData.Alt}
+          />
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image={SubData.image3}
+            alt={SubData.Alt}
+          />
+        </Grid>
+      </Grid>
+      <Box sx={{ height: { xs: "300px", md: "600px" }, background: "black" }}>
+        <Typography
+          sx={{
+            color: "white",
+            transition: "opacity 1s",
+            padding: { xs: "20px 20px 15px" },
+            fontSize: { xs: "1.2rem", md: "1.5rem" },
+            lineHeight: { xs: "1.2rem", md: "2rem" },
+          }}
+          gutterBottom>
+          Our Area
+        </Typography>
+        <iframe
+          width="100%"
+          height="100%"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
+          id="gmap_canvas"
+          src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=%20+(TIMBANGAN%20MEWAH%20SAWIT)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+      </Box>
     </Box>
   );
 }

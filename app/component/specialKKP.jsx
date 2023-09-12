@@ -27,7 +27,7 @@ const style = {
   p: { xs: 3, md: 4 },
 };
 
-export default function Subsidiaries({
+export default function SpecialKKP({
   Logo,
   Alt,
   company,
@@ -36,9 +36,6 @@ export default function Subsidiaries({
   mission,
   pdfDownload,
   bgHero,
-  image1,
-  image2,
-  image3,
   address,
   contact,
   email,
@@ -346,55 +343,6 @@ export default function Subsidiaries({
           </Grid>
         </Grid>
       </Box>
-      <Box
-        sx={{
-          top: { md: "120px" },
-          right: { md: "0" },
-          position: { xs: "relative", md: "absolute" },
-          padding: { xs: "0", md: "0 50px" },
-          gap: { md: "10px" },
-        }}
-        display="flex"
-        flexDirection="column">
-        <CardMedia
-          sx={{
-            // visibility: showImage,
-            transition: "visibility 0.3s linear",
-            borderRadius: { xs: "0", md: "5px" },
-            aspectRatio: "16/9",
-            width: { md: "350px" },
-          }}
-          component="img"
-          image={image1}
-          alt={Alt}
-        />
-        <CardMedia
-          sx={{
-            // visibility: showImage,
-            transition: "visibility 0.2s linear",
-            borderRadius: { xs: "0", md: "5px" },
-            borderRadius: "5px",
-            aspectRatio: "16/9",
-            width: { md: "350px" },
-          }}
-          component="img"
-          image={image2}
-          alt={Alt}
-        />
-        <CardMedia
-          sx={{
-            // visibility: showImage,
-            transition: "visibility 0.2s linear",
-            borderRadius: { xs: "0", md: "5px" },
-            borderRadius: "5px",
-            aspectRatio: "16/9",
-            width: { md: "350px" },
-          }}
-          component="img"
-          image={image3}
-          alt={Alt}
-        />
-      </Box>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
@@ -437,8 +385,7 @@ export default function Subsidiaries({
                 marginHeight="0"
                 marginWidth="0"
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=%20+(TIMBANGAN%20MEWAH%20SAWIT)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-            </Box>
+                src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Lintas%20Sibuga,%20Sibuga%20Industrial%20Centre,%20Lot%2070%20Sandakan+(Yun%20Fung%20Sang%20Group%20Sdn%20Bhd)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>            </Box>
             <Grid container justifyContent="center" alignItems="center">
               <Grid item xs={12} md={6}>
                 <Button
