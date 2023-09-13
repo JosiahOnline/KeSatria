@@ -39,7 +39,11 @@ export default function KKP() {
         contact={SubData.contact}
         email={SubData.email}
       />
-      <Grid container justifyContent="center" sx={{ padding: "20px" }} spacing="10px">
+      <Grid
+        container
+        justifyContent="center"
+        sx={{ padding: "20px" }}
+        spacing="10px">
         <Grid item xs={12} md={4}>
           <CardMedia
             sx={{
@@ -73,28 +77,48 @@ export default function KKP() {
             alt={SubData.Alt}
           />
         </Grid>
+        <Grid item xs={12} md={4}>
+          <Box sx={{ background: "#e7eaed", height:"100%" }}>
+            <Typography
+              sx={{
+                fontWeight:"bold",
+                color: "black",
+                transition: "opacity 1s",
+                padding: { xs: "20px 20px 0px" },
+                fontSize: { xs: "1.2rem", md: "1.5rem" },
+                lineHeight: { xs: "1.2rem", md: "2rem" },
+              }}>
+              Our Manufacturer
+            </Typography>
+            <Typography
+              sx={{
+                color: "black",
+                transition: "opacity 1s",
+                padding: { xs: "20px 20px 15px" },
+                fontSize: { xs: "1.2rem", md: "1.5rem" },
+                lineHeight: { xs: "1.2rem", md: "2rem" },
+              }}>
+              Erra Wangi Enterprise<br />(Timbangan Mewah Sawit) <br/>Location:<br/>
+              Kinabatangan, Sabah, Malaysia
+            </Typography>
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={8}>
+          <Box
+            sx={{
+              height: { xs: "250px", md: "500px" },
+            }}>
+            <iframe
+              width="100%"
+              height="100%"
+              frameBorder="0"
+              marginHeight="0"
+              marginWidth="0"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=%20+(TIMBANGAN%20MEWAH%20SAWIT)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+          </Box>
+        </Grid>
       </Grid>
-      <Box sx={{ height: { xs: "300px", md: "600px" }, background: "black" }}>
-        <Typography
-          sx={{
-            color: "white",
-            transition: "opacity 1s",
-            padding: { xs: "20px 20px 15px" },
-            fontSize: { xs: "1.2rem", md: "1.5rem" },
-            lineHeight: { xs: "1.2rem", md: "2rem" },
-          }}
-          gutterBottom>
-          ERRA WANGI ENTERPRISE
-        </Typography>
-        <iframe
-          width="100%"
-          height="100%"
-          frameBorder="0"
-          marginHeight="0"
-          marginWidth="0"
-          id="gmap_canvas"
-          src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=%20+(TIMBANGAN%20MEWAH%20SAWIT)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-      </Box>
     </Box>
   );
 }
