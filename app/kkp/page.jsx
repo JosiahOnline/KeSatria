@@ -2,6 +2,7 @@
 import React from "react";
 import { Box, CardMedia, Grid, Typography } from "@mui/material";
 import SpecialKKP from "../component/specialKKP";
+import Link from "next/link";
 const SubData = {
   Logo: "/Logo/KKPLogo1-min.png",
   Alt: "Kang Ke Palm Sdn Bhd",
@@ -108,7 +109,17 @@ export default function KKP() {
           </Box>
         </Grid>
         <Grid item xs={12} md={8}>
-          <Box
+        <Link href="https://goo.gl/maps/d4WgvFJkMEGpxdMR7">
+        <CardMedia
+            sx={{
+              borderRadius: "5px",
+              aspectRatio: "16/9",
+            }}
+            component="img"
+            image="/KKP/TMS.png"
+            alt="Timbangan Mewah Sawit Location"
+          /></Link>
+          {/* <Box
             sx={{
               height: { xs: "250px", md: "500px" },
             }}>
@@ -121,7 +132,7 @@ export default function KKP() {
               marginWidth="0"
               id="gmap_canvas"
               src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=%20+(Timbangan%20Mewah%20Sawit)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-            </Box>
+          </Box> */}
         </Grid>
       </Grid>
     </Box>
