@@ -120,9 +120,8 @@ export default function KKP() {
               marginheight="0"
               marginwidth="0"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=%20+(Timbangan%20Mewah%20Sawit)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-            </iframe>
-          </Box>
+              src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=%20+(Timbangan%20Mewah%20Sawit)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </Box>
         </Grid>
       </Grid>
     </Box>
