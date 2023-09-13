@@ -78,10 +78,10 @@ export default function KKP() {
           />
         </Grid>
         <Grid item xs={12} md={4}>
-          <Box sx={{ background: "#e7eaed", height:"100%" }}>
+          <Box sx={{ background: "#e7eaed", height: "100%" }}>
             <Typography
               sx={{
-                fontWeight:"bold",
+                fontWeight: "bold",
                 color: "black",
                 transition: "opacity 1s",
                 padding: { xs: "20px 20px 0px" },
@@ -98,7 +98,11 @@ export default function KKP() {
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
               }}>
-              Erra Wangi Enterprise<br />(Timbangan Mewah Sawit) <br/>Location:<br/>
+              Erra Wangi Enterprise
+              <br />
+              (Timbangan Mewah Sawit) <br />
+              Location:
+              <br />
               Kinabatangan, Sabah, Malaysia
             </Typography>
           </Box>
@@ -115,7 +119,8 @@ export default function KKP() {
               marginHeight="0"
               marginWidth="0"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?width=500&amp;height=500&amp;hl=en&amp;q=%20+(TIMBANGAN%20MEWAH%20SAWIT)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+              src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Lintas%20Sibuga,%20Sibuga%20Industrial%20Centre,%20Lot%2070%20Sandakan+(Yun%20Fung%20Sang%20Group%20Sdn%20Bhd)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
+            </iframe>
           </Box>
         </Grid>
       </Grid>

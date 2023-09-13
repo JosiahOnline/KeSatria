@@ -167,7 +167,7 @@ export default function SpecialKKP({
               {company}
             </Typography>
           </Grid>
-          <Grid item xs={12} >
+          <Grid item xs={12}>
             <Typography
               fontWeight="bold"
               sx={{
@@ -196,7 +196,7 @@ export default function SpecialKKP({
           alignContent="center"
           spacing={1}
           sx={{
-            marginTop: { sx: "15px", md: "0px", lg:"20px" },
+            marginTop: { sx: "15px", md: "0px", lg: "20px" },
             paddingLeft: { md: "15px" },
           }}>
           <Grid item xs={12} sm={9} md={12}>
@@ -234,7 +234,7 @@ export default function SpecialKKP({
               sx={{
                 color: "white",
                 transition: "opacity 1s",
-                marginTop: { xs: "15px", md: "0", lg:"20px" },
+                marginTop: { xs: "15px", md: "0", lg: "20px" },
                 fontSize: { xs: "1.2rem", md: "1.5rem" },
                 lineHeight: { xs: "1.2rem", md: "2rem" },
                 textShadow:
@@ -385,7 +385,8 @@ export default function SpecialKKP({
                 marginHeight="0"
                 marginWidth="0"
                 id="gmap_canvas"
-                src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Lintas%20Sibuga,%20Sibuga%20Industrial%20Centre,%20Lot%2070%20Sandakan+(Yun%20Fung%20Sang%20Group%20Sdn%20Bhd)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>            </Box>
+                src="https://maps.google.com/maps?width=500&amp;height=450&amp;hl=en&amp;q=Jalan%20Lintas%20Sibuga,%20Sibuga%20Industrial%20Centre,%20Lot%2070%20Sandakan+(Yun%20Fung%20Sang%20Group%20Sdn%20Bhd)&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+            </Box>
             <Grid container justifyContent="center" alignItems="center">
               <Grid item xs={12} md={6}>
                 <Button
