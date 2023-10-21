@@ -14,12 +14,12 @@ const SubData = {
   mission:
     "To empower farmers, industries, and communities with cutting-edge technologies and expert knowledge, fostering sustainable development and environmental stewardship.",
   pdfDownload: "/PDF/AIDA A2Z SDN BHD_Company Profile_min.pdf",
-  bgHero: "/FH/FHHero-min.png",
-  image1: "/FH/FH1-min.png",
-  image2: "/FH/FH2-min.png",
-  image3: "/FH/FH3-min.png",
-  image4: "/FH/FH4-min.png",
-  image5: "/FH/FH5-min.png",
+  bgHero: "/AIDA/AIDAHero-min.png",
+  image1: "/AIDA/AIDA1-min.png",
+  image2: "/AIDA/AIDA2-min.png",
+  image3: "/AIDA/AIDA3-min.png",
+  image4: "/AIDA/AIDA4-min.jpg",
+  image5: "/AIDA/AIDA5-min.jpg",
   address:
     "LOT 70 & 71, SIBUGA INDUSTRIAL CENTRE, JALAN LINTAS SIBUGA, 90000 SANDAKAN, SABAH",
   contact:
