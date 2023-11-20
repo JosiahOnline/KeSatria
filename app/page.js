@@ -361,6 +361,33 @@ export default function Home() {
               </Link>
             </Card>
           </Grid>
+          <Grid item xs={12} sm={4} md={4}>
+            <Card
+              sx={{
+                maxWidth: 350,
+                padding: "20px 20px 0",
+                borderRadius: "10px",
+              }}>
+              <Link href="/PPIP">
+                <CardMedia
+                  component="img"
+                  alt="Future Home Logo"
+                  height="200px"
+                  sx={{ objectFit: "contain" }}
+                  image="/Logo/PPIPLogo-min.png"
+                />
+                <CardContent>
+                  <Typography
+                    variant="h6"
+                    align="center"
+                    fontWeight="bold"
+                    color="black">
+                    Learn More
+                  </Typography>
+                </CardContent>
+              </Link>
+            </Card>
+          </Grid>
         </Grid>
       </Box>
       <Grid container justifyContent="center" alignItems="center">
