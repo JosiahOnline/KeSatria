@@ -7,7 +7,7 @@ import Subsidiaries from "../component/subsidiaries";
 const SubData = {
   Logo: "/Logo/PPIPLogo-min.png",
   Alt: "CULTIVATING SUSTAINABLE PARTNERSHIPS",
-  company: "AIDA A2Z Sdn Bhd",
+  company: "Agricultural Industry Development Association",
   description: "CULTIVATING SUSTAINABLE PARTNERSHIPS",
   vision:
     "To be the pioneering force in sustainable agriculture, promoting ethical practices and innovative solutions for a greener, more prosperous world.",
