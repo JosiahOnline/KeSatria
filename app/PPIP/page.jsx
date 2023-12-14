@@ -10,9 +10,9 @@ const SubData = {
   company: "Agricultural Industry Development Association",
   description: "CULTIVATING SUSTAINABLE PARTNERSHIPS",
   vision:
-    "To be the pioneering force in sustainable agriculture, promoting ethical practices and innovative solutions for a greener, more prosperous world.",
+    "Envisions a future where agriculture is environmentally conscious, economically robust, and socially inclusive. This vision entails a global agricultural landscape where food security is ensured, and the industry thrives through responsible practices and collaborative efforts.",
   mission:
-    "To empower farmers, industries, and communities with cutting-edge technologies and expert knowledge, fostering sustainable development and environmental stewardship.",
+    "To advance the agricultural industry through sustainable practices, innovation, and policy advocacy. By promoting ethical conduct and knowledge exchange, AIDA aims to enhance the industry's growth and resilience.",
   pdfDownload: "/PDF/PPIP_AGRICULTURE INDUSTRY DEVELOPMENT ASSOCIATION_min.pdf",
   bgHero: "/PPIP/PPIPHero-min.png",
   image1: "/PPIP/PPIP1-min.png",
