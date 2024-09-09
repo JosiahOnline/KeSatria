@@ -486,14 +486,14 @@ export default function Home() {
               </Link>
             </Card>
           </Grid>
-          <Grid item xs={12} sm={4} md={4}>
+          {/* <Grid item xs={12} sm={4} md={4}>
             <Card
               sx={{
                 maxWidth: 350,
                 padding: "20px 20px 0",
                 borderRadius: "10px",
               }}>
-              {/* <Link href="/yfsGroup"> */}
+               <Link href="/yfsGroup">
               <CardMedia
                 component="img"
                 alt="VHL Fertilizer Sdn Bhd"
@@ -501,7 +501,7 @@ export default function Home() {
                 sx={{ objectFit: "contain" }}
                 image="/Logo/VHLlogo-min.png"
               />
-              {/* <CardContent>
+               <CardContent>
                   <Typography
                     variant="h6"
                     align="center"
@@ -509,10 +509,10 @@ export default function Home() {
                     color="black">
                     Learn More
                   </Typography>
-                </CardContent> */}
-              {/* </Link> */}
+                </CardContent>
+               </Link> 
             </Card>
-          </Grid>
+          </Grid> */}
         </Grid>
       </Box>
       <Modal
